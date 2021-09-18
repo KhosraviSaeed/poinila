@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.shaya.poinila.android.presentation.view.activity.CropImageActivity">
+
+    <item android:id="@+id/doneButton"
+        android:title="@string/crop"
+        app:showAsAction="always"
+        android:icon="@drawable/done_flamingo_24dp"/>
+</menu>

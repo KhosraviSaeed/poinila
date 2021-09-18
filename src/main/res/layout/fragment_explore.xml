@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Tags-->
+    <include layout="@layout/tag_text_view"
+        android:id="@+id/explored_tag"/>
+
+    <!--<org.apmem.tools.layouts.FlowLayout
+        android:id="@+id/tags_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layoutDirection="rtl"
+        android:padding="@dimen/padding_lvlhalf"
+        android:gravity="right"/>-->
+
+    <include layout="@layout/horizontal_line"/>
+
+    <include layout="@layout/recycler_view_weighted_full"/>
+</LinearLayout>

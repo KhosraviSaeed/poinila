@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/corner_lvl1"/>
+    <solid android:color="@color/white"/>
+    <stroke android:color="#eeeeee" android:width="@dimen/border_thin"/>
+</shape>
+<!--
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item >
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/corner_lvl1"/>
+            <solid android:color="@color/poinila_light_gray"/>
+        </shape>
+    </item>
+    <item android:bottom="@dimen/shadow_radius_lvl1">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/corner_lvl1"/>
+            <stroke android:width="@dimen/border_thin" android:color="@color/poinila_light_gray"/>
+            <solid android:color="@color/poinila_post_background"/>
+        </shape>
+    </item>
+</layer-list>-->

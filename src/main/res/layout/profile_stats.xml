@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:baselineAligned="false"
+    android:gravity="center">
+
+    <!--Followres-->
+    <include layout="@layout/title_subtitle_centered"
+        android:id="@+id/followers"/>
+
+    <!--<include layout="@layout/vertical_line"/>-->
+
+    <!--Favorited-->
+    <include layout="@layout/title_subtitle_centered"
+        android:id="@+id/favorited" />
+
+    <!--<include layout="@layout/vertical_line"/>-->
+
+    <!--Posts-->
+    <include layout="@layout/title_subtitle_centered"
+        android:id="@+id/posts"/>
+
+    <!--<include layout="@layout/vertical_line"/>-->
+
+    <!--Friends-->
+    <include layout="@layout/title_subtitle_centered"
+        android:id="@+id/friends"/>
+</LinearLayout>

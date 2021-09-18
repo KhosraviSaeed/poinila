@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--Left arrow-->
+    <ImageView android:id="@+id/left_arrow"
+        style="@style/profile_arrow_left"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"/>
+    <!--Title Text-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card_title_container"
+        android:background="@color/profile_bottom_bar"
+        android:gravity="end"
+        android:padding="@dimen/padding_columned_lvl1">
+
+        <TextView
+            android:id="@+id/item_count"
+            style="@style/wrap_wrap.large_text"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:textColor="@color/card_title_color"
+            tools:text="(45)"/>
+
+        <TextView
+            style="@style/wrap_wrap.large_text"
+            android:id="@+id/card_title"
+            android:textColor="@color/card_title_color"
+            tools:text="دفترهای من"/>
+
+
+    </LinearLayout>
+
+
+    <include layout="@layout/horizontal_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/card_title_container"
+        android:id="@+id/divider" />
+</merge>

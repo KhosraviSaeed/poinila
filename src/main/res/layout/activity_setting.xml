@@ -1,0 +1,164 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.shaya.poinila.android.presentation.view.activity.SettingActivity"
+    android:orientation="vertical"
+    style="@style/match_match">
+
+    <!--Toolbar will be added here-->
+    <ScrollView
+        style="@style/match_match.textured"
+        android:padding="@dimen/padding_lvl2"
+        android:scrollbarStyle="outsideOverlay"
+        tools:ignore="UselessParent"> <!--Draws the scroll bar regardless of padding -->
+        <LinearLayout
+            style="@style/match_match"
+            android:orientation="vertical"
+            android:gravity="right">
+            <!--Account-->
+            <!--<TextView-->
+                <!--style="@style/wrap_wrap.large_text.boulder_text"-->
+                <!--android:text="@string/account"-->
+                <!--android:layout_marginBottom="@dimen/margin_lvlhalf"-->
+                <!--android:layout_marginRight="@dimen/margin_lvl2"/>-->
+            <FrameLayout
+                style="@style/match_wrap">
+                <LinearLayout
+                    style="@style/match_wrap"
+                    android:orientation="vertical"
+                    android:showDividers="middle"
+                    android:id="@+id/account_setting_group">
+
+                    <!--Toolbar will be added here. Parent is not useless-->
+                    <ScrollView
+                        style="@style/match_match.textured"
+                        android:id="@+id/content_container"
+                        android:scrollbarStyle="outsideOverlay"
+                        tools:ignore="UselessParent">
+                        <FrameLayout
+                            style="@style/match_wrap">
+                            <LinearLayout
+                                style="@style/match_wrap"
+                                android:orientation="vertical"
+                                android:id="@+id/profile_setting_group">
+
+                                <include layout="@layout/label_value_setting"
+                                    android:id="@+id/name"/>
+
+                                <!--<include layout="@layout/label_value_setting"-->
+                                <!--android:actorID="@+actorID/username"/>-->
+
+                                <include layout="@layout/label_value_setting"
+                                    android:id="@+id/email"/>
+
+                                <include layout="@layout/label_value_setting"
+                                    android:id="@+id/phone"/>
+
+                                <include layout="@layout/label_value_setting"
+                                    android:id="@+id/about_me"/>
+
+                                <!--<include layout="@layout/label_value_setting"
+                                    android:actorID="@+actorID/gender"/>-->
+
+                                <include layout="@layout/label_value_setting"
+                                    android:id="@+id/website"/>
+
+                            </LinearLayout>
+                        </FrameLayout>
+                    </ScrollView>
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding_lvl1"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:paddingRight="@dimen/padding_lvl2"
+                android:paddingLeft="@dimen/padding_lvl1"
+                android:background="@drawable/poinila_frame"
+                android:layout_marginTop="@dimen/margin_lvl1"
+                android:id="@+id/password">
+
+
+                <TextView
+                    style="@style/setting_label"
+                    android:id="@+id/label"
+                    android:layout_alignParentRight="true"/>
+
+
+            </RelativeLayout>
+
+            <!--Application-->
+            <!--<TextView-->
+                <!--style="@style/wrap_wrap.large_text.boulder_text"-->
+                <!--android:text="@string/application"-->
+                <!--android:layout_marginTop="@dimen/margin_lvl3"-->
+                <!--android:layout_marginBottom="@dimen/margin_lvlhalf"-->
+                <!--android:layout_marginRight="@dimen/margin_lvl2"/>-->
+            <FrameLayout
+                style="@style/match_wrap"
+                android:layout_marginTop="@dimen/margin_lvl1">
+                <LinearLayout
+                    style="@style/match_wrap"
+                    android:orientation="vertical"
+                    android:showDividers="middle"
+                    android:id="@+id/application_setting_group">
+
+                    <include layout="@layout/label_value_setting"
+                        android:id="@+id/frames"/>
+
+                    <include layout="@layout/label_value_setting"
+                        android:id="@+id/circles"/>
+
+                    <include layout="@layout/label_value_setting"
+                        android:id="@+id/app_notifications"/>
+
+                    <include layout="@layout/label_value_setting"
+                        android:id="@+id/app_settings"/>
+
+                    <!--<include layout="@layout/label_value_setting"
+                        android:id="@+id/email_notifications"/>-->
+                </LinearLayout>
+            </FrameLayout>
+
+            <!--Other-->
+            <!--<TextView-->
+                <!--style="@style/wrap_wrap.large_text.boulder_text"-->
+                <!--android:text="@string/other_settings"-->
+                <!--android:layout_marginTop="@dimen/margin_lvl3"-->
+                <!--android:layout_marginBottom="@dimen/margin_lvlhalf"-->
+                <!--android:layout_marginRight="@dimen/margin_lvl2"/>-->
+            <FrameLayout
+                style="@style/match_wrap"
+                android:layout_marginTop="@dimen/margin_lvl1">
+                <LinearLayout
+                    style="@style/match_wrap"
+                    android:orientation="vertical"
+                    android:showDividers="middle"
+                    android:id="@+id/other_settings_group">
+
+                    <include layout="@layout/label_value_setting"
+                        android:id="@+id/rules"/>
+
+                    <include layout="@layout/label_value_setting"
+                        android:id="@+id/help"/>
+
+                    <include layout="@layout/label_value_setting"
+                        android:id="@+id/contact_us"/>
+
+                    <include layout="@layout/label_value_setting"
+                        android:id="@+id/about_poinila"/>
+
+                    <include layout="@layout/label_value_setting"
+                        android:id="@+id/logout"/>
+                </LinearLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+

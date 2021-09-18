@@ -1,0 +1,42 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/test_if_its_related_to_saved_instance_being_called"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/match_match"
+    android:background="@drawable/login_background"
+    tools:context="com.shaya.poinila.android.presentation.view.activity.SignUpLoginActivity">
+
+    <LinearLayout
+        android:id="@+id/login_page_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/poinila_logo"
+            android:layout_marginTop="@dimen/margin_lvl2"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ponila_logo_with_text" />
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_lvl2"
+            android:layout_marginLeft="@dimen/margin_lvl4"
+            android:layout_marginRight="@dimen/margin_lvl4"
+            android:layout_marginTop="@dimen/margin_lvl2">
+            <!--android:layout_marginTop="@dimen/margin_lvl2"-->
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/welcome_text"
+            style="@style/match_wrap.large_text.my_sin_text"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin_lvl4"
+            android:paddingRight="@dimen/margin_lvl4"
+            android:text="@string/welcome_text"
+            android:textStyle="bold" />
+        <!--android:layout_marginTop="@dimen/margin_lvl3"-->
+    </LinearLayout>
+</ScrollView>

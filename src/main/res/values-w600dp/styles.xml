@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="select_frame" parent="base_select_frame">
+        <item name="android:layout_width">@dimen/tablet_bar_width</item>
+    </style>
+
+    <style name="search_bar_container" parent="base_search_container">
+        <item name="android:layout_width">@dimen/tablet_bar_width</item>
+    </style>
+
+    <style name="profile_arrow_left">
+        <item name="android:src">@drawable/arrow_left_48dp</item>
+        <item name="android:layout_width">@dimen/icon_small</item>
+        <item name="android:layout_height">@dimen/icon_small</item>
+    </style>
+
+    <style name="post_content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/fontsize_large</item>
+    </style>
+
+    <!--<style name="helpIndicator" parent="baseHelpIndicator">
+        <item name="android:layout_width">@dimen/tablet_bar_width</item>
+    </style>-->
+
+    <style name="helpFragment_text" parent="baseHelpText">
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="helpFragment_image" parent="baseHelpImage">
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="help_textview_bg" parent="base_help_textveiw_bg">
+        <item name="android:layout_width">400dp</item>
+    </style>
+</resources>

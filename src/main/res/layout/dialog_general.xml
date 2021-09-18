@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    style="@style/match_wrap"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_lvl2">
+    <!--android:background="@color/wild_sand"-->
+
+    <TextView
+        android:id="@+id/dialog_title"
+        style="@style/match_wrap.large_text.black_text"
+        android:layout_gravity="right"
+        android:layout_marginBottom="@dimen/margin_lvl1"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/separator_thickness"
+        android:layout_marginBottom="@dimen/margin_lvl1"
+        android:background="@color/poinila_gray" />
+
+    <!--TODO: insert custom view here. index is 2-->
+
+    <!--MESSAGE-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding_lvl1"
+        android:paddingBottom="@dimen/padding_lvl1">
+
+        <TextView
+            android:id="@+id/dialog_message"
+            style="@style/match_wrap.large_text.boulder_text"
+            />
+
+    </ScrollView>
+
+
+    <!--BUTTONS-->
+    <LinearLayout
+        android:id="@+id/dialog_buttons_container"
+        style="@style/match_wrap"
+        android:layout_marginTop="@dimen/margin_lvl1"
+        android:orientation="horizontal">
+
+        <!--Positive Button-->
+        <Button
+            android:id="@+id/dialog_positive_button"
+            style="@style/positive_dialog_button" />
+
+
+        <!--Neutral Button-->
+        <android.support.v4.widget.Space
+            android:id="@+id/buttons_space_between1"
+            android:layout_width="@dimen/margin_lvl1"
+            android:layout_height="1px"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/dialog_neutral_button"
+            style="@style/neutral_dialog_button"
+            android:visibility="gone" />
+
+        <!--Negative Button-->
+        <android.support.v4.widget.Space
+            android:id="@+id/buttons_space_between2"
+            android:layout_width="@dimen/margin_lvl1"
+            android:layout_height="1px" />
+
+        <Button
+            android:id="@+id/dialog_negative_button"
+            style="@style/negative_dialog_button" />
+    </LinearLayout>
+</LinearLayout>

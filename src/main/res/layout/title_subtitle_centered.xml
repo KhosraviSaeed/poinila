@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/title_subtitle_centered_width"
+    android:layout_height="@dimen/title_subtitle_centered_height"
+    android:background="@drawable/profile_info_circle"
+    android:layout_margin="@dimen/margin_columned_lvlhalf"
+    android:gravity="center"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <!--Text Top-->
+    <TextView
+        android:id="@+id/top_text"
+        android:textColor="@color/flamingo"
+        style="@style/wrap_wrap.large_text" />
+
+    <!--Bottom Text-->
+    <TextView
+        android:layout_centerHorizontal="true"
+        style="@style/wrap_wrap.small_text"
+        android:layout_marginTop="-3dp"
+        android:textColor="@color/profile_info_circle_text_color"
+        android:id="@+id/bottom_text" />
+</LinearLayout>

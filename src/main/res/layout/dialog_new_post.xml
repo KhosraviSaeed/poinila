@@ -1,0 +1,84 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/match_match">
+
+    <LinearLayout
+        android:id="@+id/dialog_content"
+        style="@style/match_wrap"
+        android:orientation="vertical">
+        <!--android:animateLayoutChanges="true"  no good look at all!-->
+
+        <include layout="@layout/radio_group_post" />
+
+        <!--Select Image-->
+        <com.shaya.poinila.android.presentation.view.costom_view.GalleryCameraImagePickerView
+            android:id="@+id/pickerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:crop_ratio="free" />
+
+        <!--Summary-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/summary_input_layout"
+            style="@style/textInputLayout"
+            android:layout_marginBottom="@dimen/margin_lvl1"
+            android:hint="@string/hint_post_summary"
+            app:counterMaxLength="@integer/max_length_image_post_summary">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/summary_field"
+                style="@style/input_til"
+                android:minLines="2"
+                android:maxLines="3"/>
+            <!--style="@style/input_oneLine"-->
+        </android.support.design.widget.TextInputLayout>
+
+        <!--Collections-->
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/select_collection"
+            style="@style/spinner"
+            android:layout_marginBottom="@dimen/margin_lvl1"
+            android:prompt="@string/select_collection" />
+
+        <!--Below this item are arbitrary fields-->
+        <ImageButton
+            android:id="@+id/expand"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginBottom="@dimen/margin_lvl1"
+            android:src="@drawable/arrow_down_white_24dp" />
+
+        <!--Tags-->
+        <include layout="@layout/tag_container_with_edittext" />
+
+        <!--Title-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/caption_input_layout"
+            style="@style/textInputLayout"
+            android:hint="@string/hint_post_caption"
+            app:counterMaxLength="@integer/max_length_image_post_title">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/caption_field"
+                style="@style/input_til" />
+            <!--style="@style/input_oneLine"-->
+        </android.support.design.widget.TextInputLayout>
+
+        <!--Content-->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/content_input_layout"
+            style="@style/textInputLayout"
+            android:hint="@string/hint_post_content"
+            android:visibility="gone"
+            app:counterMaxLength="@integer/max_length_text_post_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/content_field"
+                style="@style/input_til"
+                android:minLines="3"
+                android:maxLines="10"/>
+            <!--style="@style/input_oneLine"-->
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+</ScrollView>

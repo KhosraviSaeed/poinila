@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/padding_lvl1"
+    android:paddingBottom="@dimen/padding_lvl1"
+    android:paddingLeft="@dimen/padding_lvl2"
+    android:paddingRight="@dimen/padding_lvl2"
+    android:background="@drawable/poinila_frame"
+    android:layout_marginTop="@dimen/margin_lvlhalf"
+    android:layout_marginLeft="@dimen/margin_lvlhalf"
+    android:layout_marginRight="@dimen/margin_lvlhalf">
+
+    <com.shaya.poinila.android.presentation.view.costom_view.SvgMaskedImageView
+        style="@style/notification_main_image"
+        android:src="@drawable/post_no_image"
+        android:id="@+id/image"/>
+<!--    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/image_lvl1ohalf"
+        android:layout_height="@dimen/image_lvl1ohalf"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/avatar"
+        android:actorID="@+actorID/image"/>-->
+
+    <!--Notification Title and Message-->
+    <include layout="@layout/notif_title_subtitle_black_gray"/>
+
+    <!--TODO: possible place for layout improvement-->
+    <include layout="@layout/notif_images_container"
+        android:id="@+id/notif_image_container"/>
+
+</RelativeLayout>

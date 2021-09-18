@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_lvlhalf">
+
+    <ImageButton
+        style="@style/circleFrame_management_icon"
+        android:src="@drawable/friends_white"
+
+        android:id="@+id/view_members"/>
+    <include layout="@layout/vertical_line"/>
+
+    <ImageButton
+        style="@style/circleFrame_management_icon"
+        android:src="@drawable/edit_white"
+        android:id="@+id/edit_name"/>
+
+    <include layout="@layout/vertical_line"/>
+
+    <ImageButton
+        style="@style/circleFrame_management_icon"
+        android:src="@drawable/delete"
+        android:id="@+id/delete"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:paddingRight="@dimen/padding_lvl2"
+        android:textStyle="bold"
+        style="@style/medium_text.mercury.boulder_text.centered_right"
+        android:id="@+id/name"/>
+</LinearLayout>

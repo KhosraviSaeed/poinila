@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_lvl2">
+
+        <!--Login Title-->
+        <include layout="@layout/title_arrow_divider_login" />
+
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_below="@id/divider"
+            android:id="@+id/radio_group"
+            style="@style/match_wrap"
+            android:layout_marginTop="@dimen/margin_lvl1"
+            android:layout_marginBottom="@dimen/margin_lvl1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="1" />
+
+            <!--Text Type-->
+            <TextView
+                android:id="@+id/left_textview"
+                style="@style/wrap_wrap.large_text.boulder_text"
+                android:text="@string/email" />
+
+            <RadioButton
+                android:id="@+id/email_option"
+                style="@style/radio_button_my_sin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/right_textview"
+                style="@style/wrap_wrap.large_text.boulder_text"
+                android:text="@string/sms" />
+
+            <RadioButton
+                android:id="@+id/sms_option"
+                style="@style/radio_button_my_sin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="1" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/input_field_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_height"
+            android:background="@drawable/bordered_rounded_rect"
+            android:gravity="center_vertical|right"
+            android:layout_below="@id/radio_group"
+            android:layout_marginBottom="@dimen/margin_lvl1"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/input_field"
+                style="@style/large_text.boulder_text.centered_right"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/input_height"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="text" />
+
+            <ImageView
+                android:id="@+id/input_filed_icon"
+                android:padding="@dimen/padding_lvlhalf"
+                android:layout_width="@dimen/icon_big"
+                android:layout_height="@dimen/icon_big" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/verify_button"
+            android:layout_below="@id/input_field_container"
+            style="@style/large_text.west_side.rounded.white_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_height"
+            android:text="@string/submit" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+

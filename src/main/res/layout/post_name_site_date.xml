@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    >
+
+    <!--Title-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        style="@style/wrap_wrap.large_text"
+        android:gravity="right"
+        android:layout_marginBottom="@dimen/margin_lvlhalf"
+        android:layout_marginLeft="@dimen/margin_lvl2"
+        android:layout_toRightOf="@+id/date_created"/>
+
+<!--    &lt;!&ndash;Favicon&ndash;&gt;
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/icon_very_small"
+        android:layout_height="@dimen/icon_very_small"
+        android:src="@drawable/favicon"
+        android:layout_alignRight="@id/title"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="@dimen/margin_lvl1"/>-->
+
+<!--    &lt;!&ndash;Subtitle&ndash;&gt;
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_toLeftOf="@id/icon"
+        android:layout_alignBaseline="@id/icon"
+        android:layout_below="@id/title"
+        style="@style/wrap_wrap.medium_text"
+        android:paddingRight="0dp" />-->
+
+    <!--Date-->
+    <TextView
+        android:id="@+id/date_created"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBaseline="@id/title"
+        style="@style/wrap_wrap.medium_text"/>
+</RelativeLayout>

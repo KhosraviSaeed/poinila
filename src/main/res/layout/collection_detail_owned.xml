@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_texture"
+    tools:context="com.shaya.poinila.android.presentation.view.activity.PostListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_lvlhalf"
+        >
+
+        <LinearLayout
+            style="@style/match_wrap"
+            android:padding="@dimen/padding_lvl1"
+            android:background="@drawable/poinila_frame"
+            android:orientation="horizontal"
+            android:weightSum="15">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/edit_button"
+                    style="@style/collection_details_buttons"
+                    android:background="@drawable/collection_detail_owned_edit_button"
+                    android:layout_marginBottom="@dimen/margin_lvl1"
+                    android:text="@string/edit" />
+
+                <Button
+                    android:id="@+id/remove_button"
+                    style="@style/collection_details_buttons"
+                    android:background="@drawable/collection_detail_owned_delete_button"
+                    android:text="@string/remove" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/collection_follow"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/follow_button"
+                        style="@style/collection_details_buttons"
+                        android:background="@android:color/transparent"
+                        android:text="@string/follow_item"
+                        android:textColor="@color/collection_follow"/>
+
+                    <ImageView
+                        android:id="@+id/follow_button_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:src="@drawable/action_follow_collection"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:gravity="right">
+
+                <TextView
+                    android:id="@+id/collection_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/item_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/flamingo"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/collection_description"
+                    style="@style/match_wrap.medium_text.boulder_text"
+                    android:gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:layout_weight="4"
+                android:id="@+id/image_big"
+                android:layout_marginLeft="@dimen/margin_lvl1"
+                style="@style/collection_rounded_image"
+                />
+
+        </LinearLayout>
+
+        <!--<TextView-->
+            <!--android:id="@+id/collection_description"-->
+            <!--style="@style/match_wrap.medium_text.boulder_text"-->
+            <!--android:gravity="right"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="@dimen/padding_lvl1"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:background="@drawable/poinila_frame"/>-->
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/collection_info_bar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="@dimen/margin_lvlhalf"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<com.makeramen.roundedimageview.RoundedImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:id="@+id/image_big"-->
+                <!--style="@style/collection_rounded_image"-->
+                <!--/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/item_count"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@color/white"-->
+                <!--android:gravity="center" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/remove_button"-->
+                <!--style="@style/collection_details_buttons"-->
+                <!--android:background="@drawable/collection_detail_owned_delete_button"-->
+                <!--android:text="@string/remove" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/edit_button"-->
+                <!--style="@style/collection_details_buttons"-->
+                <!--android:background="@drawable/collection_detail_owned_edit_button"-->
+                <!--android:text="@string/edit" />-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:background="@drawable/poinila_frame"-->
+                <!--android:gravity="center">-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/follow_button"-->
+                    <!--style="@style/collection_details_buttons"-->
+                    <!--android:background="@android:color/transparent"-->
+                    <!--android:text="@string/follow_item" />-->
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/follow_button_img"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:visibility="gone"-->
+                    <!--android:src="@drawable/action_follow_collection"/>-->
+
+
+            <!--</LinearLayout>-->
+
+
+
+            <!--&lt;!&ndash;<Button-->
+                <!--android:layout_width="@dimen/collection_details_icons_width"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--tools:text="@string/edit"-->
+                <!--android:id="@+id/collection_action_button"-->
+                <!--style="@style/collection_details_buttons"-->
+                <!--tools:background="@color/my_sin"-->
+                <!--android:visibility="gone"-->
+                <!--tools:visibility="visible"-->
+                <!--/>&ndash;&gt;-->
+
+        <!--</LinearLayout>-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+

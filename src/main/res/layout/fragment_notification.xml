@@ -1,0 +1,64 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragments.NotificationFragment"
+    android:orientation="vertical"
+    android:background="@drawable/bg_texture"
+    android:id="@+id/container">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="@dimen/padding_lvl1">
+
+        <!--  <Switch
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textOn="@string/my_notifs"
+              android:textOff="@string/others_notifs"
+              android:background="@android:color/transparent"
+              android:button=""/>-->
+
+        <TextView
+            android:id="@+id/others_notifs"
+            android:text="@string/others_notifs"
+            style="@style/notification_page_main_button"/>
+
+        <TextView
+            style="@style/notification_page_main_button"
+            android:id="@+id/my_notifs"
+            android:text="@string/my_notifs" />
+    </LinearLayout>
+
+
+    <TextView
+        style="@style/match_wrap.medium_text.mercury.boulder_text.centered_right"
+        android:id="@+id/invitations_header"
+        android:paddingTop="@dimen/padding_lvlhalf"
+        android:paddingBottom="@dimen/padding_lvlhalf"
+        android:paddingRight="@dimen/padding_lvl2"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/invitations_notifications"
+        android:orientation="vertical"
+        android:visibility="gone">
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        style="@style/match_wrap.medium_text.mercury.boulder_text.centered_right" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/recycler_view" />
+
+</LinearLayout>

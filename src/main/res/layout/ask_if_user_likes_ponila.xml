@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary">
+
+    <TextView
+        android:id="@+id/ask_if_user_likes_us_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="?attr/dialogPreferredPadding"
+        android:text="@string/ask_if_user_likes_app"
+        android:textColor="?android:attr/textColorPrimaryInverse" />
+
+    <Button
+        android:id="@+id/positive_button"
+        style="@style/askForLikeAppButtons"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/ask_if_user_likes_us_text_view"
+        android:text="@string/yes" />
+
+    <Button
+        android:id="@+id/negative_button"
+        style="@style/askForLikeAppButtons"
+        android:layout_below="@id/ask_if_user_likes_us_text_view"
+        android:layout_toLeftOf="@id/positive_button"
+        android:text="@string/no" />
+
+    <Button
+        android:id="@+id/dont_know_button"
+        style="@style/askForLikeAppButtons"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/ask_if_user_likes_us_text_view"
+        android:text="@string/not_sure" />
+
+</RelativeLayout>

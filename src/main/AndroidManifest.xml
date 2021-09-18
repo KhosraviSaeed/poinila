@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shaya.poinila.android.presentation">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" /> <!--Dangerous Permission-->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!--Dangerous Permission-->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <!--<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
+    <application
+        android:name=".PoinilaApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".view.activity.MainActivity"
+            android:clearTaskOnLaunch="true"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:host="www.ponila.com" />
+                <data android:host="ponila.com" />
+                <data android:host="192.168.1.103" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.activity.SignUpLoginActivity"
+            android:launchMode="singleTop"
+            android:label="@string/title_activity_sign_up_login"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name=".view.activity.CommentsListActivity"
+            android:label="@string/title_activity_comments_list"
+            android:parentActivityName=".view.activity.MainActivity"
+            android:windowSoftInputMode="adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.activity.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".view.activity.SettingActivity"
+            android:label="@string/title_activity_setting"
+            android:parentActivityName=".view.activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".view.activity.EditInterestsActivity"
+            android:label="@string/title_activity_edit_interests"
+            android:parentActivityName=".view.activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".view.activity.SelectInterestActivity"
+            android:label="@string/title_activity_select_interests_actvity"/>
+        <activity
+            android:name=".view.activity.CirclesManagementActivity"
+            android:label="@string/title_activity_circles_management"
+            android:parentActivityName=".view.activity.SettingActivity">
+            <meta-member
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.activity.SettingActivity" />
+        </activity>
+        <activity
+            android:name=".view.activity.NotificationSwitchActivity"
+            android:label="@string/title_activity_application_notification"
+            android:parentActivityName=".view.activity.SettingActivity">
+            <meta-member
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.activity.SettingActivity" />
+        </activity>
+        <activity
+            android:name=".view.activity.ProfileSettingActivity"
+            android:label="@string/title_activity_profile_setting"
+            android:parentActivityName=".view.activity.SettingActivity">
+            <meta-member
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.activity.SettingActivity" />
+        </activity>
+        <activity
+            android:name=".view.activity.FramesManagementActivity"
+            android:label="@string/title_activity_frames_management"
+            android:parentActivityName=".view.activity.SettingActivity">
+            <meta-member
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.activity.SettingActivity" />
+        </activity>
+        <activity
+            android:name=".view.activity.MemberListActivity"
+            android:label="@string/title_activity_member_followers"
+            android:parentActivityName=".view.activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.activity.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".view.activity.PostListActivity"
+            android:label="@string/title_activity_post"
+            android:parentActivityName=".view.activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".view.activity.NewPostActivity"
+            android:launchMode="singleTop"
+            android:label="@string/new_post"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+
+        <activity
+            android:name=".view.activity.OthersProfileActivity"
+            android:label="@string/title_activity_others_profile"
+            android:parentActivityName=".view.activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.activity.MainActivity" />
+            <!--<intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:host="www.ponila.com" />
+                <data android:host="ponila.com" />
+                <data android:host="192.168.1.103" />
+            </intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".view.activity.CollectionListActivity"
+            android:label="@string/title_activity_collection_list"
+            android:parentActivityName=".view.activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".view.activity.SplashActivity"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+            <!-- android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.activity.FullImageActivity"
+            android:theme="@style/full_image_activity"/>
+        <activity
+            android:name=".view.activity.CropImageActivity"
+            android:theme="@style/full_image_activity"/>
+        <activity
+            android:name=".view.activity.ChangePasswordActivity"
+            android:label="@string/title_activity_change_password"
+            android:parentActivityName=".view.activity.SettingActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.activity.SettingActivity" />
+        </activity>
+        <activity
+            android:name=".view.activity.InvitationNotifListActivity"
+            android:label="@string/title_activity_invitation_notif_list"
+            android:parentActivityName=".view.activity.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".view.activity.HelpActivity"
+            android:label="@string/title_activity_help"/>
+        <activity
+            android:name=".view.activity.AppSettingActivity"
+            android:label="@string/app_settings"
+            android:parentActivityName=".view.activity.SettingActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.activity.SettingActivity" />
+        </activity>
+        <activity
+            android:name=".view.activity.WebviewActivity"
+            android:label="@string/title_activity_webview"
+            android:hardwareAccelerated="true">
+        </activity>
+
+        <activity android:name=".view.activity.ChromeActivity"
+            android:label="srdsfsdfsdfdsf">
+        </activity>
+
+        <activity
+            android:name=".view.activity.NotificationOpenedActivity"
+            android:label=""/>
+
+
+        <service android:name="com.shaya.poinila.android.authentication.AuthenticationService" >
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" >
+                </action>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@layout/authenticator" >
+            </meta-data>
+        </service>
+
+        <service
+            android:name="com.shaya.poinila.android.NotificationService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.onesignal.NotificationExtender" />
+            </intent-filter>
+        </service>
+
+        <meta-data android:name="com.onesignal.NotificationOpened.DEFAULT" android:value="DISABLE" />
+
+        <receiver android:name=".SmsReceiver" android:exported="true" >
+            <intent-filter android:priority="1000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.tapstream.sdk.ReferrerReceiver" android:exported="true" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <!--<receiver-->
+            <!--android:name="com.shaya.poinila.android.presentation.OneSignalReceiver"-->
+            <!--android:exported="false">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.onesignal.BackgroundBroadcast.RECEIVE" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="be690570e63d95c30727708af7a2c38bcc72fe80" />
+    </application>
+
+</manifest>

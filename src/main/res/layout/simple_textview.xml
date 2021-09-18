@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text"
+    style="@style/match_wrap.large_text.boulder_text"
+    android:gravity="center_vertical|right"
+    android:minHeight="?android:attr/listPreferredItemHeightSmall"
+    android:paddingLeft="?android:attr/listPreferredItemPaddingRight"
+    android:paddingRight="?android:attr/listPreferredItemPaddingLeft" />
+
+<!--android:textAppearance="@style/?android:attr/textAppearanceListItemSmall"-->

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--Title, Organization-->
+    <!--<include layout="@layout/post_item_title_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_lvl1"
+        android:actorID="@+actorID/post_title"
+        />-->
+
+        <!--Post Image-->
+        <com.shaya.poinila.android.presentation.view.costom_view.AspectRatioImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/post_contentdescription"
+            android:id="@+id/post_image"
+            android:visibility="gone"
+            app:aspectRatioEnabled="true"
+            app:dominantMeasurement="width"
+            android:background="@drawable/post_general_image"
+            />
+
+
+
+
+    <TextView
+        android:layout_gravity="right"
+        style="@style/post_columned_title"
+        android:id="@+id/post_title"
+        android:visibility="gone"/>
+
+    <!--Content-->
+    <TextView
+        android:id="@+id/post_content"
+        style="@style/post_content_inList"
+        android:maxLength="@integer/max_length_text_post_summary"/>
+    <!--android:text="@string/test_long"-->
+
+    <!--<include layout="@layout/horizontal_line"-->
+        <!--/>-->
+
+</merge>

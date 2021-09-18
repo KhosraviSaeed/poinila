@@ -1,0 +1,107 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_columned_lvl5">
+
+        <LinearLayout
+            android:id="@+id/profile_top_part"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/poinila_frame"
+            android:layout_marginLeft="@dimen/margin_lvl2"
+            android:layout_marginRight="@dimen/margin_lvl2"
+            android:layout_marginTop="@dimen/margin_lvl1">
+
+            <!--General Info (name, url, image, setting icon-->
+            <include
+                android:id="@+id/profile_general_info"
+                layout="@layout/profile_general_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_lvl2"
+                android:layout_marginRight="@dimen/margin_lvl2"
+                android:layout_marginTop="@dimen/margin_lvl2" />
+
+            <!--About Me-->
+            <TextView
+                android:id="@+id/about_me"
+                style="@style/profile_aboutMe"
+                android:layout_marginLeft="@dimen/margin_lvl4"
+                android:layout_marginRight="@dimen/margin_lvl4"
+                android:layout_marginTop="@dimen/margin_lvl2" />
+
+            <!--Blog Info-->
+            <include
+                android:id="@+id/blog_info"
+                layout="@layout/blog_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_lvl2"
+                android:layout_marginRight="@dimen/margin_lvl2"
+                android:layout_marginTop="@dimen/margin_lvl2" />
+
+            <!--Profile Stats-->
+            <include
+                android:id="@+id/profile_stats"
+                layout="@layout/profile_stats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_lvl2"
+                android:layout_marginLeft="@dimen/margin_lvl2"
+                android:layout_marginRight="@dimen/margin_lvl2"
+                android:layout_marginTop="@dimen/margin_lvl2" />
+        </LinearLayout>
+
+        <!--<View-->
+            <!--android:id="@+id/divider"-->
+            <!--android:background="@color/alto"-->
+            <!--android:layout_marginLeft="@dimen/margin_lvl1"-->
+            <!--android:layout_marginRight="@dimen/margin_lvl1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px" />-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_lvl1"
+            android:orientation="vertical">
+            <!--Owning Collections-->
+            <include
+                android:id="@+id/owning_collections_container"
+                layout="@layout/collection_bottom_bar_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--Following Collections-->
+            <include
+                android:id="@+id/following_collections_container"
+                layout="@layout/collection_bottom_bar_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_lvl1" />
+
+            <!--Interest-->
+            <include
+                android:id="@+id/interest_container"
+                layout="@layout/tags_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_lvl1" />
+
+            <!--            &lt;!&ndash;url, mail, location&ndash;&gt;
+                        <include layout="@layout/profile_info"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/profile_info"
+                            android:layout_marginTop="@dimen/margin_lvl1"
+                            android:layout_marginBottom="@dimen/margin_lvl1"/>-->
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

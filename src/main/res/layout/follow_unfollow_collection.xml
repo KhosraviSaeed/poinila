@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_margin="1dp"
+    android:background="@drawable/collection_bottom_bar">
+
+    <TextView
+        android:id="@+id/collection_follow_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/follow_item"
+        android:textColor="@color/sea_buckthorn"
+        android:layout_marginRight="@dimen/margin_lvl1"/>
+
+    <ImageView
+        android:id="@+id/collection_follow_icon"
+        android:layout_width="@dimen/icon_small"
+        android:layout_height="@dimen/icon_small"
+        android:src="@drawable/action_follow_collection"/>
+</LinearLayout>

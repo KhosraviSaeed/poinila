@@ -1,0 +1,584 @@
+<resources>
+    <!--Application and Activity Strings-->
+    <string name="app_name">پونیلا</string>
+    <string name="ponila_host">ponila.com</string>
+
+    <string name="account_type">Ponila</string>
+
+
+    <string name="title_activity_main">پونیلا</string>
+    <string name="title_activity_collection">دفتر %s</string>
+    <string name="title_activity_post_likers">پسندها</string>
+    <string name="title_activity_others_profile">@string/app_name</string> <!--app chooser show this string and since this activity handles both collection and post on clicking on collection url it would be wired to see "post"-->
+    <string name="title_activity_setting">پیکربندی</string>
+    <string name="title_activity_reposts_list">گردآوری ها</string>
+    <string name="title_activity_comments_list">نظرها</string>
+    <string name="title_activity_sign_up_login">پونیلا</string>
+    <string name="title_activity_member_faved_posts">برگه‌های پسند شده</string>
+    <string name="title_activity_member_posts">برگه‌های %s</string>
+    <string name="title_activity_member_friends">دوستان</string>4
+    <string name="title_activity_member_followers">دنبال کنندگان</string>
+    <string name="title_activity_collection_list">دفترها</string>
+    <string name="title_activity_member_collections" formatted="false">دفترها</string>
+    <string name="title_activity_member_followed_collections" formatted="false">دفترهای دنبال شده</string>
+    <string name="title_activity_circles_management">مدیریت محفل‌ها</string>
+    <string name="title_activity_edit_interests">@string/interest</string>
+    <string name="title_activity_application_notification"> اعلان های برنامه</string>
+    <string name="title_activity_email_notification">اعلان های رایانامه</string>
+    <string name="title_activity_profile_setting">تنظیمات نمایه</string>
+    <string name="title_activity_frames_management">"مدیریت دسته‌ها "</string>
+    <string name="title_activity_post">@string/app_name</string> <!--app chooser show this string and since this activity handles both collection and post on clicking on collection url it would be wired to see "post"-->
+    <string name="action_settings">پیکربندی</string>
+
+    <!--General-->
+    <string name="share">اشتراک گذاری</string>
+    <string name="download">دریافت</string>
+    <string name="report">گزارش</string>
+    <string name="similar_posts">برگه‌های مشابه</string>
+    <string name="weekly_recommended_posts">پیشنهاد هفتگی برگه</string>
+    <string name="post">برگه</string>
+    <string name="collection">دفتر</string>
+    <string name="member">عضو</string>
+    <string name="has_send_friend_request">به شما درخواست دوستی داده است</string>
+    <string name="agree">می‌پذیرم</string>
+    <string name="ignore">فعلا نه</string>
+    <string name="follow_item">دنبال کن</string>
+    <string name="unfollow_item">دنبال شده</string>
+    <string name="my_notifs">اعلانات من</string>
+    <string name="others_notifs">اعلانات دیگران</string>
+    <string name="day_name">امروز</string>
+    <string name="login">ورود</string>
+    <string name="signup">ثبت نام</string>
+    <string name="female">خانم</string>
+    <string name="male">آقا</string>
+    <string name="follower">دنبال کننده</string>
+    <string name="signup_in_poinila">ثبت نام در پونیلا</string>
+    <string name="login_in_poinila">ورود به پونیلا</string>
+    <string name="welcome_text">جستجو لازم نیست، با پونیلا یک دنیای جدید برای کشف مطالب مورد علاقه ات داری.</string>
+    <string name="name">نام و نام خانوادگی</string>
+
+
+    <!--TextView stings-->
+    <string name="saved_in">ثبت شده در</string>
+    <string name="subscribe">پیگیری</string>
+    <string name="select_collection">انتخاب دفتر</string>
+    <string name="first_shared_in">اولین نشر در دفتر</string>
+
+    <!--Formatted-->
+    <string name="favorites_formatted" formatted="false">%d پسند</string>
+    <string name="reposts_formatted" formatted="false">%d گردآوری</string>
+    <string name="comments_formatted" formatted="false">%d نظر</string>
+    <string name="new_posts_formatted">%d برگه‌ی جدید</string>
+    <string name="posts_formatted">(%d برگه)</string>
+    <string name="plus_formatted" formatted="false">+%d</string>
+    <string name="x_outof_y_formatted" formatted="false">%d از %d</string>
+    <string name="member_collections_formatted" formatted="false">دفترهای %s</string>
+
+    <!--Hint-->
+    <string name="insert_comment_hint">لطفا پیام خود را وارد کنید …</string>
+    <string name="hint_description">@string/description</string>
+    <string name="hint_post_caption">عنوان برگه</string>
+    <string name="hint_post_content">متن برگه</string>
+    <string name="hint_collection_caption">عنوان دفتر</string>
+    <string name="hint_collection_description">توضیح دفتر</string>
+    <string name="hint_email">@string/email</string>
+    <string name="hint_post_summary">خلاصه برگه</string>
+    <string name="hint_old_password">گذرواژه پیشین</string>
+    <string name="hint_password">@string/password</string>
+    <string name="hint_confirm_password">@string/confirm_password</string>
+    <string name="hint_last_name">@string/last_name</string>
+    <string name="hint_first_name">@string/first_name</string>
+    <string name="hint_message">پیغام دعوت</string>
+
+    <!--Content Descriptions-->
+    <string name="post_contentdescription">post_image</string>
+
+
+    <!--Field Errors-->
+    <string name="login_faild">ورود امکان پذیر نیست</string>
+    <string name="change_user_pass_fail">تغییر نام کاربری و رمز عبور ناموفق بود</string>
+    <string name="error_required_field">این فیلد الزامی است</string>
+    <string name="email_error">به صورت یک ایمیل مانند aa@bbb.ccc</string>
+    <string name="terms_conditions"><![CDATA[تمامی <a href=”\http://ponila.com/terms\>قوانین و شرایط استفاده</a> را می‌پذیرم.]]></string>
+    <string name="signup_faild">ثبت نام امکان پذیر نیست</string>
+
+    <!--Labels-->
+    <string name="first_name">نام</string>
+    <string name="last_name">نام خانوادگی</string>
+    <string name="username">نام کاربری</string>
+    <string name="email">ایمیل</string>
+    <string name="email_change">تغییر ایمیل</string>
+    <string name="password">گذرواژه</string>
+    <string name="report_hint">متن خود را وارد نمایید</string>
+    <string name="confirm_password">تائید گذرواژه</string>
+    <string name="other_settings">موارد دیگر</string>
+    <string name="profile">نمایه</string>
+    <string name="phone">تلفن</string>
+    <string name="phone_change">تغییر شماره</string>
+    <string name="gender">جنسیت</string>
+    <string name="website">وبگاه</string>
+    <string name="website_address">آدرس وبگاه</string>
+    <string name="manage_circle">مدیریت محفل ها</string>
+    <string name="app_notifs">اعلان های برنامه</string>
+    <string name="email_notifs">اعلان های رایانامه</string>
+
+    <string name="add_collection">افزودن دفتر</string>
+    <string name="add_post">افزودن برگه</string>
+    <string name="add_post_from_site">افزودن برگه از وبگاه</string>
+
+    <string name="submit">تائید</string>
+    <string name="cancel">انصراف</string>
+    <string name="select_interests">انتخاب علاقه‌مندی‌</string>
+    <string name="select_topic">انتخاب موضوع</string>
+    <string name="select_circle">انتخاب محفل</string>
+
+
+    <!--Arrays-->
+    <string-array name="comment_options">
+        <item>@string/remove</item>
+    </string-array>
+
+    <string-array name="tab_titles">
+        <item>@string/dashboard</item>
+        <item>@string/following_collections</item>
+        <item>@string/search</item>
+        <item>@string/notifications</item>
+        <item>@string/profile</item>
+    </string-array>
+
+
+    <!--New Strings-->
+
+
+    <!--Formatted Strings Style-->
+    <!--<string name="format_dites_active_weights" formatted="false">شروع:  %1$s kg فعلی:  %2$s kg هدف:  %3$s</string>-->
+
+    <string name="yes">بله</string>
+    <string name="no">خیر</string>
+    <string name="approve_send_friend_request">آیا مطمئن هستید که می خواهید به ایشان درخواست دوستی بفرستید؟</string>
+    <string name="accept_friend_request">آیا مطمئن هستید که میخواهید درخواست دوستی ایشان را بپذیرید؟</string>
+    <string name="friend_request">درخواست دوستی</string>
+    <string name="text">متن</string>
+    <string name="image">عکس</string>
+    <string name="video">ویدیو</string>
+    <string name="description">توضیح</string>
+    <string name="tag">برچسب</string>
+    <string name="new_post">برگه‌ی جدید</string>
+    <string name="create">ایجاد</string>
+    <string name="new_collection">دفتر جدید</string>
+    <string name="create_new_collection">ایجاد دفتر جدید</string>
+    <string name="uninstall_old_app_title">پاک کردن نسخه قدیمی پونیلا</string>
+    <string name="uninstall_old_app_content">نسخه قدیمی پونیلا روی دستگاه شما نصب است. آیا میخواهید آن را پاک کنید؟</string>
+    <!--<string name="test_url">http://www.supercars.net/gallery/119513/2841/5.html</string>-->
+    <!--<string name="test_url">http://www.yooz.ir/?q=%D9%BE%D8%A7%D8%B1%DA%A9&amp;st=3&amp;s=0&amp;v=2</string>-->
+    <string name="test_url">http://mirceaeliade.wikispaces.com/file/view/Prince_of_Persia_The_Two_Thrones_wallpaper9.jpg/50238065/Prince_of_Persia_The_Two_Thrones_wallpaper9.jpg</string>
+    <string name="website_post">برگه از وبگاه</string>
+    <string name="create_text_post">برگه متنی از وبگاه</string>
+    <string name="error_invalid_url">قالب آدرس صحیح نیست</string>
+    <string name="error_no_protocol">پروتکل آدرس مشخص نشده است</string>
+    <string name="wrong_protocol">پروتکل آدرس باید http یا https باشد</string>
+    <string name="error_no_image_found">عکسی یافت نشد</string>
+    <string name="select_subject">انتخاب موضوع</string>
+    <string name="remove">حذف</string>
+    <string name="favorited">پسند شده</string>
+    <string name="friend">دوست</string>
+    <string name="follows">دنبال می‌کند</string>
+    <string name="interest">علاقه‌ها</string>
+    <string name="repost_by">بازگردآوری توسط</string>
+    <string name="created_by">گردآوری توسط</string>
+    <string name="collected_in">ثبت شده در</string>
+    <string name="select_frame">انتخاب دسته</string>
+    <string name="repost_post">بازگردآوری برگه</string>
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="new_interest">علاقه‌ی جدید</string>
+    <string name="title_activity_select_interests_actvity">انتخاب علاقه‌مندی</string>
+    <string name="circle_members_management">مدیریت اعضای محفل</string>
+    <string name="finish">پایان</string>
+
+
+    <string name="new_circle">محفل جدید</string>
+    <string name="edit_circle_name">تغییر نام محفل</string>
+    <string name="confirm_delete_circle">آیا می خواهید این حلقه را حذف کنید؟</string>
+    <string name="frames_management">مدیریت دسته‌ها</string>
+    <string name="deactivate">غیرفعال کردن حساب کاربری</string>
+    <string name="tutorial">راهنما</string>
+    <string name="about_poinila">درباره‌ی پونیلا</string>
+    <string name="new_frame">دسته‌ی جدید</string>
+    <string name="frame_members_management">مدیریت اعضای دسته</string>
+    <string name="edit_frame_name">تغییر نام دسته</string>
+    <string name="confirm_delete_frame">آیا مطمئن هستید، می خواهید این دسته را حذف کنید؟</string>
+    <string name="error_password">گذرواژه حداقل باید 8 حرف شامل 2 عدد باشد</string>
+    <string name="error_confirm_password">تکرار گذرواژه با اصل آن یکسان نیست</string>
+    <string name="save">ذخیره</string>
+    <string name="frames">دسته ها</string>
+    <string name="frame">دسته</string>
+    <string name="frame_about">شما میتوانید دفترهایی را که دنبال می کنید دسته بندی کنید تا هنگام مشاهده لیست دفترهای دنبال شده راحت تر به آنجه می خواهید دسترسی پیدا کنید.</string>
+    <string name="circle_about">شما میتوانید محفلی از دوستانتان ایجاد کنید و دفترهایتان را تنها برای تعدادی از آنان قابل مشاهده کنید</string>
+    <string name="circle">محفل</string>
+    <string name="error_no_frame_exist">شما دسته ای نساخته اید</string>
+    <string name="title_activity_fragment_host">FragmentHostActivity</string>
+    <string name="requested_to_be_your_friend">به شما درخواست دوستی داده است.</string>
+    <string name="accepted_your_friendship">درخواست دوستی شما را پذیرفت.</string>
+    <string name="profile_change_not_found">هنوز اطلاعات کاربر دریافت نشده است!</string>
+    <string name="download_error">خطا در دریافت فایل</string>
+
+
+
+    <string name="notif_comment_after_you_singular">زیر برگه‌ای که شما نظر داده‌اید نظر داده است.</string>
+    <string name="notif_comment_after_you_plural">زیر برگه‌ای که شما نظر داده‌اید نظر داده اند.</string>
+
+    <string name="notif_my_post_liked_singular">برگه‌ی شما را پسندیده‌است.</string>
+    <string name="notif_my_post_liked_plural">برگه‌ی شما را پسندیده‌اند.</string>
+
+    <string name="notif_comment_my_post_singular">روی برگه‌ی شما نظر داده است.</string>
+    <string name="notif_comment_my_post_plural">روی برگه‌ی شما نظر داده اند.</string>
+
+    <!--<string name="notif_friend_liked_posts_singular" formatted="false">برگه‌ی %s را پسندیده است.</string>
+    <string name="notif_friend_liked_posts_plural" formatted="false">برگه‌ی %s را پسندیده اند.</string>-->
+    <string name="notif_friend_liked_posts_singular" formatted="false">%d برگه را پسندیده است.</string>
+    <!--<string name="notif_friend_liked_posts_plural" formatted="false">%d برگه را پسندیده ان</string>-->
+
+    <string name="notif_my_post_reposted_singular">برگه‌ی شما را بازگردآوری کرده‌است.</string>
+    <string name="notif_my_post_reposted_plural">برگه‌ی شما را بازگردآوری کرده‌اند.</string>
+
+    <string name="notif_my_collection_followed_singular">دفتر شما را دنبال کرده‌است.</string>
+    <string name="notif_my_collection_followed_plural">دفتر شما را دنبال کرده‌اند.</string>
+
+    <!--<string name="notif_friend_followed_collections_singular" formatted="false">دفتر %s را دنبال کرده است.</string>
+    <string name="notif_friend_followed_collections_plural" formatted="false">دفتر %s را دنبال کرده اند.</string>-->
+    <string name="notif_friend_followed_collections_singular">%d دفتر جدید را دنبال می کند.</string>
+
+    <!--<string name="notif_friend_created_collections_singular" formatted="false">%s یک دفتر جدید ساخته است.</string>
+    <string name="notif_friend_created_collections_plural" formatted="false">1$%s 2$%d دفتر جدید ساخته است.</string>-->
+    <string name="notif_friend_created_collections_singular" formatted="false">%d دفتر جدید ساخته است.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="edit">ویرایش</string>
+    <string name="update_collection">ویرایش دفتر</string>
+    <string name="loading">در حال بارگیری</string>
+    <string name="please_wait">لطفا صبر کنید…</string>
+    <string name="edit_friendship">ویرایش دوستی</string>
+    <string name="edit_circle">ویرایش محفل</string>
+    <string name="remove_friend">حذف دوستی</string>
+    <string name="error_imagepost_without_image">عکسی انتخاب نشده است</string>
+    <string name="notif_friendship_accepted_singular">درخواست دوستی شما را پذیرفته است.</string>
+    <string name="notif_friendship_accepted_plural">درخواست دوستی شما را پذیرفته اند</string>
+    <string name="invitations">دعوت ها</string>
+    <string name="warning_connect_to_network">لطفا به اینترنت متصل شوید</string>
+    <string name="edit_collection">ویرایش دفتر</string>
+    <string name="confirm_delete_collection">آیا مطمئن هستید که می خواهید این دفتر را حذف کنید؟</string>
+    <string name="remove_collectoin">حذف دفتر</string>
+    <string name="warning_logout_earase_data">با خارج شدن از برنامه تمامی داده های ذخیره شده شما پاک خواهد شد!</string>
+    <string name="logout">خروج</string>
+    <string name="hint_pick_from_gallery">انتخاب از گالری</string>
+    <string name="hint_take_picture">عکس با دوربین دستگاه</string>
+    <string name="view_photo">نمایش عکس</string>
+    <string name="from_camera">آپلود از دوربین</string>
+    <string name="from_gallery">آپلود از گالری</string>
+    <string name="crop">برش عکس</string>
+    <string name="private_word">خصوصی</string>
+    <string name="error_select_topic">انتخاب موضوع اجباری است</string>
+    <string name="public_circle">محفل عمومی</string>
+    <string name="private_for_all">فقط من</string>
+    <string name="account">حساب کاربری</string>
+    <string name="application">برنامه</string>
+    <string name="title_activity_change_password">تغییر گذرواژه</string>
+    <string name="confirm_delete_post">آیا واقعا می خواهید این برگه را حذف کنید؟</string>
+    <string name="view_all_invitations">دیدن تمام درخواست ها</string>
+    <string name="comma">، </string>
+    <string name="and">و</string>
+    <string name="other_people"> عضو دیگر </string>
+    <string name="title_activity_invitation_notif_list">درخواست های دوستی</string>
+    <string name="invite_to_poinila_formatted">دعوت به پونیلا (%d)</string>
+    <string name="send">ارسال</string>
+    <string name="invite_to_poinila">دعوت به پونیلا</string>
+    <string name="hint_phone">شماره همراه</string>
+    <string name="error_login">خطا در نام کاربری یا گذرواژه</string>
+    <string name="error_mail">الگوی پست الکترونیکی غلط است.</string>
+    <string name="edit_website">ویرایش وبگاه</string>
+    <string name="hint_website_name">نام وبگاه</string>
+    <string name="hint_website_url">آدرس وبگاه</string>
+    <string name="error_loading_images">بارگیری عکس ها موفقیت آمیز نبود</string>
+    <string name="about_me">درباره‌ی من</string>
+    <string name="error_max_50">حداکثر 50 کاراکتر</string>
+    <string name="error_max_200">حداکثر 200 کاراکتر</string>
+    <string name="error_max_500">حداکثر 500 کاراکتر</string>
+    <string name="error_max_5000">حداکثر 5000 کاراکتر</string>
+    <string name="hint_about_me">@string/about_me</string>
+    <string name="visible_to_everyone">قابل مشاهده برای همه</string>
+    <string name="error_min_formatted">حداقل %d کاراکتر</string>
+    <string name="error_max_formatted">حداکثر %d کاراکتر</string>
+    <string name="error_short_query">جستار کوتاه است</string>
+    <string name="dashboard">داشبورد</string>
+    <string name="following_collections">دفترهای دنبال شده</string>
+    <string name="search">جستجو</string>
+    <string name="notifications">اعلانیه‌ها</string>
+    <string name="error_min_6">حداقل 6 کاراکتر</string>
+    <string name="error_page_info_not_loaded">اطلاعات سایت بارگیری نشده است</string>
+    <string name="successfully_loaded">اطلاعات با موفقیت بارگیری شدند</string>
+    <string name="error_small_image">ابعاد عکس انتخاب شده کوچک است</string>
+    <string name="title_activity_help">HelpActivity</string>
+    <string name="help_intro">پونیلا برنامه‌‌ای است که با آن می‌توانید مطالب مورد علاقه‌ی خودتان را پیدا کنید، ذخیره کنید و با دیگران به اشتراک بگذارید.</string>
+    <string name="help_dashboard">در صفحه‌ی داشبورد، پونیلا بهترین مطالب اینترنت که با علاقه‌های شما مرتبط است را کشف می‌کند و به شما نشان می‌دهد. به هر یک از این مطالب برگه گفته می‌شود.</string>
+    <string name="help_collection">کاربران برای دسته‌بندی برگه‌های خود از دفتر استفاده می‌کنند. شما می‌توانید دفترهای دیگران را دنبال کنید و در اینجا لیست دفترهای دنبال شده را ببینید.</string>
+    <string name="help_search">در این صفحه در میان دفترها، برگه‌ها و اعضای پونیلا جستجو کنید. پونیلا با هوشمندی بهترین گزینه‌ها را برای شما پیدا می‌کند.</string>
+    <string name="help_notification">در صفحه‌ی اعلانات خبر درخواست دوستی، پسندیدن برگه‌ها و دفترهای شما و ایجاد برگه‌ها و دفترهای جدید به اطلاع شما رسانده می‌شود.</string>
+    <string name="help_profile">در صفحه‌ی پروفایل، اطلاعات دوستان، برگه‌ها و دفترهای شما وجود دارد. امکانات خاص پونیلا هم از طریق دکمه‌ی تنظیمات در دسترس شماست.</string>
+    <string name="help_add_content">برای ایجاد دفتر و برگه روی علامت + نارنجی رنگ پایین صفحه کلیک کنید. با استفاده از این منو می توانید از طریق لینک وب سایت هم برگه بسازید</string>
+    <string name="ok">خب</string>
+    <string name="about_version_contact"><![CDATA[<p>پونیلا نسخه‌ی %s </p>
+<p>تماس با واحد پشتیبانی <a href="mailto:support@ponila.com"> support@ponila.com</a></p>
+<p>تماس با واحد تبلیغات، بازاریابی و فروش <a href="mailto:sales@ponila.com"> sales@ponila.com</a></p>
+]]></string>
+    <string name="error_entity_name">تنها کاراکترهای الفبایی، عددی، فاصله، خط، خط زیرین و نقطه مجازند</string>
+    <string name="hint_coverFromPosts">انتخاب کاور از عکس برگه ها</string>
+    <string name="contact_us">تماس با ما</string>
+    <string name="hint_title">عنوان</string>
+    <string name="hint_content">@string/description</string>
+    <string name="critics_and_suggestions">انتقاد و پیشنهاد</string>
+    <string name="report_bug">گزارش خطا</string>
+    <string name="report_user">گزارش کاربر</string>
+    <string name="report_post">گزارش برگه</string>
+    <string name="pref_show_select_frame_title">دسته</string>
+    <string name="app_settings">تنظیمات برنامه</string>
+    <string name="pref_show_select_frame_key">select frame option</string>
+    <string name="info_already_requested">قبلا به ایشان درخواست دوستی داده اید</string>
+    <string name="hint_userNameOrEmail">نام کاربری یا رایانامه</string>
+    <string name="default_no_frame">هیچکدام</string>
+    <string name="pref_show_select_frame_summary">نمایش گزینه انتخاب دسته در صفحه دفترهای دنبال شده</string>
+    <string name="title_activity_webview">" "</string>
+    <string name="open_in_browser">نمایش در مرورگر</string>
+    <string name="default_stat_value">0</string>
+    <string name="change_email">ویرایش پست الکترونیکی</string>
+    <string name="forgot_password">رمز عبور را فراموش کرده اید؟</string>
+    <string name="recover_password">بازیابی رمز عبور</string>
+    <string name="recover_password_message">نحوه‌ی بازیابی رمز عبور در قالب یک ایمیل یا پیامک برای شما ارسال خواهد شد.</string>
+    <string name="next_phase">مرحله بعد</string>
+    <string name="last_phase">مرحله قبل</string>
+    <string name="error_invalid_phone">قالب شماره موبایل صحیح نیست</string>
+    <string name="error_invalid_email">قالب ایمیل صحیح نیست</string>
+    <string name="error_invalid_email_or_phone">ایمیل یا شماره موبایل صحیح نیست</string>
+
+    <string name="sms">پیامک</string>
+    <string name="verifying">فعالسازی</string>
+    <string name="success_verification_mail">اطلاعات فعالسازی به ایمیل شما ارسال شد</string>
+    <string name="success_verification">با موفقیت فعال سازی انجام شد.</string>
+    <string name="error_verification_wrong_code">کد فعالسازی صحیح نیست</string>
+    <string name="fullname">نام و نام خانوادگی</string>
+    <string name="verification_code">کد فعالسازی</string>
+    <string name="already_registered">حساب کاربری دارید؟ وارد شوید.</string>
+    <string name="hint_identification_code">کد بازنشانی</string>
+    <string name="reset_password">بازنشانی رمز عبور</string>
+    <string name="terms_of_condition_word">قوانین و شرایط استفاده</string>
+    <string name="terms_of_condition_tail">را مطالعه کرده ام و قبول دارم</string>
+    <string name="success_verification_sms">کد فعالسازی برای شما ارسال خواهد شد</string>
+    <string name="error_fail_register">ثبت نام موفقیت آمیز نبود</string>
+    <string name="error_already_taken_username">قبلا گرفته شده است</string>
+    <string name="error_must_agree_terms">قوانین استفاده باید پذیرفته شوند.</string>
+    <string name="error_username_length">حداقل 6 و حداکثر 32 کاراکتر</string>
+    <string name="error_username_rule">حروف، اعداد، نقطه و خط تیره</string>
+    <string name="error_password_length">حداقل 6 و حداکثر 40 کاراکتر</string>
+    <string name="error_invalid_username">این نام قابل قبول نیست</string>
+    <string name="picked_for_you">دستچین شده</string>
+    <string name="found_in_interest">برگرفته از علاقه</string>
+    <string name="found_in_followed_collections">دنبال شده</string>
+    <string name="loading_creating_suggestions">پونیلا در حال جستجوی مطالب مورد علاقه شماست</string>
+    <string name="error_add_interests">خطا در ثبت علاقه مندی ها</string>
+    <string name="error_min_selected_interest">حداقل 5 علاقه انتخاب کنید</string>
+    <string name="error_full_name_length">حداقل 3 و حداکثر 100 کاراکتر</string>
+    <string name="hint_full_name">نام و نام خانوادگی</string>
+    <string name="error_already_used_verification_code">این کد فعالسازی قبلا استفاده شده است.</string>
+    <string name="error_change_password_code">خطا در تغییر پسورد</string>
+    <string name="share_dialog_title">اشتراک گذاری با…</string>
+    <string name="ponila_world_of_interest">پونیلا دنیای علاقه ها</string>
+    <string name="checkout_this_collection">این دفترو نگاه کن! </string>
+    <string name="checkout_this_post">ادامه برگه در لینک زیر</string>
+    <string name="post_share_url">%1$s/post/%2$s/</string>
+    <string name="collection_share_url">%1$s/%2$s/%3$s</string>
+    <string name="member_share_url">%1$s/%2$s/</string>
+    <string name="checkout_this_member">پروفایل این کاربر را در پونیلا مشاهده کن!</string>
+    <string name="default_font_path">fonts/iransans.ttf</string>
+    <string name="default_bold_font_path">fonts/iransansbold.ttf</string>
+    <string name="edit_phone_no">ویرایش شماره همراه</string>
+    <string name="discared_changes">تغییرات را بیخیال می شوید؟</string>
+    <string name="error_websiteNameSetURLNot">آدرس نباید خالی باشد</string>
+    <string name="frame_name">نام دسته</string>
+    <string name="error_frame_name_length">حداقل 3 و حداکثر 50 کاراکتر</string>
+    <string name="error_circle_name_length">@string/error_frame_name_length</string>
+    <string name="circle_name">نام حلقه</string>
+    <string name="title_activity_explore">کشف علاقه ها</string>
+    <string name="warning_complete_crop">لطفا برش عکس را تکمیل کنید. (با فشردن علامت تیک)</string>
+    <string name="error_old_password_wrong">پسورد قدیمی صحیح نیست</string>
+    <string name="visible_password">آشکار سازی گذرواژه</string>
+    <string name="couldnt_launch_market">گوگل پلی در گوشی شما نشده است.</string>
+    <string name="error_no_market_found">هیچ مارکتی روی دستگاه شما نصب نشده است</string>
+    <string name="permission_reason_camera">بدون اجازه شما ذخیره کردن عکس با دوربین امکان پذیر نیست</string>
+    <string name="permission_reason_sms">بدون اجازه شما امکان خواندن کد ارسال شده از پیامک وجود ندارد</string>
+    <string name="ask_if_user_likes_app">از پونیلا راضی هستید؟</string>
+    <string name="not_sure">مطمئن نیستم</string>
+    <string name="no_and_neverAskMeAgain">خیر، دیگر نپرس</string>
+    <string name="rate_ponila_in_market">به پونیلا امتیاز می دهید؟</string>
+    <string name="error_no_occurance_email">حساب کاربری با این پست الکترونیکی ثبت نشده است</string>
+    <string name="error_no_occurance_phone">حساب الکترونیکی با این شماره ثبت نشده است</string>
+    <string name="error_no_occurance_unique_name">حساب الکترونیکی با این نام کاربری ثبت نشده است</string>
+    <string name="guest">ورود میهمان</string>
+    <string name="exit_anonymous">ورود / ثبت نام</string>
+    <string name="anonymous_info_following_collections">@string/default_anonymous_message</string>
+    <string name="anonymous_info_notifications">@string/default_anonymous_message</string>
+    <string name="anonymous_info_profile">@string/default_anonymous_message</string>
+    <string name="default_anonymous_message">لطفا برای استفاده از امکانات بیشتر پونیلا وارد شوید و یا در صورت نداشتن حساب کاربری، ثبت نام کنید.</string>
+    <string name="error_guest_action">در حالت میهمان امکان پذیر نیست</string>
+    <string name="resend">ارسال مجدد</string>
+    <string name="email_or_phone_number">شماره همراه یا ایمیل</string>
+
+
+    <!-- Help Description-->
+    <string name="help_dashboard_level_one_description">هربرگه شامل عکس و توضیحات کوتاهی راجع به یک مطلب اینترنت است</string>
+    <string name="help_dashboard_level_two_description">روی این برگه کلیک کنید تا توضیحات کاملتری از این برگه را ببینید</string>
+    <string name="help_post_related_posts_description">روی این عکس کلیک کنید تا متن کامل برگه را در سایت اصلی ببینید</string>
+    <string name="help_followed_collections_description">اینجا یک دفتر را مشاهده میکنید.دفتر مجموعه ای از برگه ها را شامل می شود.از دفتر برای دسته بندی برگه مورد نظر استفاده می شود.</string>
+    <string name="help_profile_description">برای ایجاد برگه یا دفتر جدید از این منو استفاده کنید.</string>
+    <string name="help_create_description">در صورتی که میخواهید برگه شما به یک صفحه از وبگاه پیوند شود،در اینجا نشانی پیوند آن صفحه از وبگاه را وارد میکنید.</string>
+    <string name="help_posts_of_collection_description">با دنبال کردن هردفتر، در جریان آخرین برگه های آن قرار خواهید گرفت.</string>
+
+    <!-- Help Button Text -->
+    <string name="help_next_btn_text">باشه</string>
+
+    <string name="setting_rules_item">قوانین</string>
+    <string name="setting_rule">پونیلا يك سايت به اشتراك گذري محتواي آنلاين است كه هر شخص با داشتن آزادي هاي فردي، در قالب قوانين و سياست هاي پونیلا مي تواند از آن استفاده كند. ورود کاربران به وب‏‌سایت يا اپليكيشن هاي پونيلا هنگام استفاده از پروفایل شخصی، برگه ها، دفترها و سایر خدمات ارايه شده به معنای آگاه بودن و پذیرفتن شرایط و قوانین و همچنین شكل استفاده از خدمات پونیلا است. توجه کنید که به دلیل ماهیت پویا و در حال رشد و بهبود لحظه به لحظه پونیلا، ممکن است مطالب شرايط و قوانين مندرج تغییر کنند. هميشه آخرین تغییرات از طريق همین صفحه در دسترس شما قرار خواهد گرفت و ادامه فعاليت شما در پونیلا به منزله موافقت‌ و مطابقت شما با شرایط استفاده از پونیلا است و شرایط و قوانین مندرج، جایگزین کلیه توافق‏‌های قبلی محسوب می‏‌شود.
+شرايط عضويت
+حداقل سن براي عضويت در پونیلا، 15 سال است. شما با عضو شدن در پونیلا مي پذيريد كه سن شما بالاي 15 سال است و در صورت بروز هر گونه مشكل به دليل سن پايين تر از 15سال متوجه شما خواهد بود و پونیلا در اين خصوص مسووليتي نخواهد داشت.
+جعل هویت اشخاص حقیقی یا حقوقی، تیم مدیریت سایت و سوء استفاده از آن در جهت فریب سایر کاربران ممنوع است. تمامي کاربران بايد هنگام ثبت نام در سايت، از کلمات مناسب جهت نام کاربري خود استفاده نمايند. در صورت مشاهده کلمات رکيک و نامناسب بدون اخطار قبلی اشتراک کاربر حذف و دسترسي وي به پونیلا قطع خواهد شد.
+قواعد انتشار مطلب
+پونیلا بر اساس مطالب ارسالي توسط كاربران گسترش پيدا مي كند. بنابراين با استناد به ماده 74 قانون تجارت الکترونیک مصوب 17/10/1382 مجلس شورای اسلامی و با توجه به پونیلا مصداق بستر مبادلات الکترونیکی صوتی و تصویر است، مسوولیت نقض حقوق تصریح شده مولفان در قانون فوق از قبیل تکثیر، اجرا و توزیع و یا هر گونه محتوی خلاف قوانین کشور ایران بر عهده کاربران است.
+در اين راستا كاربران بايد از انتشار مطالب و نظرات مصداق محتواي مجرمانه (موضوع ماده 21 قانون جرايم رايانه اي) و از جمله موارد زير در پونیلا خودداري كنند:
+محتواي دلخراش و آزاردهنده
+محتواي اهانت آميز به مذاهب، اديان، قوميت‌ها، افراد و مقامات سياسي
+محتواي تنش زا از نظر سياسي، اجتماعي و ...
+محتواي مغاير با شئونات اخلاقي و عرفي جامعه
+محتواي مغاير با حق تاليف اشخاص حقيقي و حقوقي
+پيشنهاد و يا تشويق به هر نوع فعاليت غير قانوني
+تهديد، آزار و اذيت، تجاوز به حقوق و بي احترامي به ساير كاربران
+براي مشاهده ليست كامل مصاديق محتواي مجرمانه موضوع ماده 21 قانون جرايم رايانه اي به لينك http://internet.ir/crime_index.html براي مشاهده ليست كامل مصاديق محتواي مجرمانه موضوع ماده 21 قانون جرايم رايانه اي به لينك.
+تحت هیچ شرایطی پونیلا مسوولیت خسارت های وارده در اثر اعتماد و اتکاي اعضا به دیگر کاربران و فاش شدن اطلاعات توسط خود عضو را نمی پذیرد. همچنين پونیلا مسووليتي در مورد از بين رفتن اطلاعات قرار گرفته بر روي اين سايت ندارد.
+مسوولیت حفظ رمز عبور به عهده خود کاربر می باشد و پونیلا تحت هیچ شرایطی رمز عبور کاربران را از آنها درخواست نخواهد کرد. در صورتي‌که کلمه عبور خود را فراموش کرده ايد با استفاده از لينک «فراموشي کلمه رمز» مي‌توانيد آن‌را دريافت کنيد. مسوولين سايت به هيچ عنوان نسبت به ارسال دستي اين اطلاعات اقدام نخواهند کرد.
+در صورت هک شدن پروفایل شما، بايد مراتب را سریعا به قسمت پشتیبانی سایت اطلاع دهید. در صورت هرگونه سوء استفاده و نفوذ و کلاه برداری با نام کاربری شما، تمام مسوولیت آن متوجه شخص شما خواهد بود.
+استفاده از مطالب قرارگرفته بر روي پونیلا در جاي ديگر مجاز نمي باشد. بخصوص اطلاعات شخصي افراد، عکس آن ها و مطالب مربوط به آن ها قابل استفاده در هر مکان ديگري بغير از پونیلا نيست.
+کليه محتواي نرم افزاري و ابداعات و طرح هاي پونیلا متعلق به پونیلا بوده و کليه حقوق آن ها متعلق به پونیلا است.
+پونیلا مجاز است به هر نحوي که بخواهد از مطالب قرارگرفته بر روي دفترها، برگه ها و پروفايل ها که قانونا متعلق به شخص يا نشريه يا سازمان ديگري نباشد استفاده نمايد (مثلا آنها را به عنوان برگه هاي پربازديد در قسمت ديگري از سايت نمايش دهد).
+ساير موارد
+پونیلا مجاز است در صورت تخلف کاربران از قوانین سایت، عضویت آنان را تعلیق یا حذف کند.
+پونیلا تا حد ممکن نسبت به حفظ مطالب کاربران تلاش خواهد کرد. اما هیچگونه تعهدی در زمینه حفظ و نگهداری آنان نخواهد داشت.
+شما با عضویت در پونیلا متعهد می شوید که مدیران، شرکت های تابع و همکاران پونیلا را از هرگونه هزینه، مسوولیت و آسیب وارد شده به دلیل شکایات افراد ثالث به خاطر نقض حقوق یا حق تالیف و جعل هویت مبری بدانید و تاوان آسیب های وارد شده به پونیلا را بپردازید</string>
+
+    <!-- Data -->
+    <string name="successfully_created">با موفقیت ساخته شد</string>
+    <string name="successfully_commented">نظر ثبت گردید</string>
+    <string name="successfully_updated">تغییرات با موفقیت ثبت گردید</string>
+    <string name="successfully_deleted">با موفقیت حذف گردید</string>
+    <string name="successfully_submitted_report">با تشکر، نظر شما با موفقیت ثبت گردید</string>
+    <!--All situations with responses other than 200 and 401-->
+    <string name="error_nothing_found">موردی یافت نشد</string>
+    <string name="error_website_images">بارگیری عکس ها موفقیت آمیز نبود</string>
+    <string name="error_socket_timeout">socket timed out</string>
+    <string name="error_sth_bad_happened">مشکلی رخ داده است</string>
+    <string name="error_duplication_collection_name">شما پیشتر دفتری با همین نام ساخته اید</string>
+    <string name="error_unable_to_connect">مشکل در برقراری ارتباط با سرور</string>
+    <string name="successful_recovery">اطلاعات بازیابی رمز عبور ارسال شد</string>
+    <string name="error_google_account_not_found">حساب کاربری گوگل شما یافت نشد</string>
+    <string name="error_already_registered_phone">این شماره قبلا ثبت شده است</string>
+    <string name="error_already_registered_email">این ایمیل قبلا ثبت شده است</string>
+    <string name="error_invalid_phone_no">قالب شماره تلفن صحیح نیست</string>
+    <string name="error_repost">خطا در بازگردآوری برگه</string>
+
+    <string name="persian_and">و</string>
+    <string name="persian_person">نفر</string>
+    <string name="persian_other">دیگر</string>
+
+    <string name="people_like_notification_message">برگه های شما را پسندیده اند</string>
+    <string name="person_like_notification_message">برگه شما را پسندیده است</string>
+    <string name="people_follow_notification_message">دفترهای شما را دنبال میکنند</string>
+    <string name="person_follow_notification_message">دفتر شما را دنبال میکند</string>
+    <string name="people_comment_notification_message">نظر داده اند</string>
+    <string name="person_comment_notification_message">نظر داده است</string>
+    <string name="friendship_request_notification_message">درخواست دوستی شما را پذیرفت</string>
+    <string name="friendship_answer_notification_message">به شما درخواست دوستی داده است</string>
+
+
+    <string name="progress_dialog_message">لطفا کمی صبر کنید...</string>
+
+
+    <!-- Notification Pages Title -->
+    <string name="notification_post_like_title">برگه های پسندیده شده</string>
+    <string name="notification_post_comment_title">نظرات</string>
+    <string name="notification_collection_follow_title">دفترهای دنبال شده</string>
+    <string name="notification_suggestion_post_title">برگه های پیشنهادی</string>
+
+    <string name="google_signin_btn">ورود با گوگل</string>
+
+    <string name="server_client_id">167856249045-bt5tjuk0io8tgq64m5d1uprdh6vb563t.apps.googleusercontent.com</string>
+
+    <string name="error_google_connection">خطا در اتصال به گوگل</string>
+    <string name="error_google_sign_in">خطا در ورود به گوگل</string>
+
+    <string name="report_successful_message">ممنون از گزارش شما</string>
+
+    <string name="exit_with_back_message">برای خروج یکبار دیگر دکمه بازگشت را بزنید</string>
+
+
+    <string name="snackbar_verify_message">مشخصات خود را تایید نمایید</string>
+
+    <string name="error_user_not_found">اطلاعات کاربر موجود نمی باشد</string>
+
+    <string name="error_select_collection">دفتر انتخاب نکرده اید</string>
+    <string name="change_user_pass_title">تغییر نام کاربری و رمز عبور</string>
+    <string name="select_video_description">ویدیو مورد نظر خود را انتخاب کنید:</string>
+    <string name="select_image_description">تصویر مورد نظر خود را انتخاب کنید:</string>
+    <string name="select_post_type_description">چه نوع برگه ای میخواهید ایجاد کنید؟‍</string>
+
+    <string name="change_orientation_error">قابلیت چرخش صفحه را فعال کنید</string>
+    <string name="play_video_error">خطا در نمایش ویدیو</string>
+
+
+
+
+
+
+
+    <!--    <plurals name="notif_comment_after_you">
+            <item quantity="one">زیر برگه‌ای که شما نظر داده‌اید نظر داده است.</item>
+            <item quantity="other">زیر برگه‌ای که شما نظر داده‌اید نظر داده اند.</item>
+        </plurals>
+        <plurals name="notif_my_post_liked">
+            <item quantity="one">برگه‌ی شما را پسندیده‌است.</item>
+            <item quantity="other">برگه‌ی شما را پسندیده‌اند.</item>
+        </plurals>
+        <plurals name="notif_comment_my_post" >
+            <item quantity="one">روی برگه‌ی شما نظر داده است.</item>
+            <item quantity="other">روی برگه‌ی شما نظر داده اند.</item>
+        </plurals>
+        <plurals name="notif_friend_liked_posts" >
+            <item formatted="false" quantity="one">برگه‌ی %s را پسندیده است.</item>
+            <item formatted="false" quantity="other">برگه‌ی %s را پسندیده اند.</item>
+        </plurals>
+        <plurals name="notif_my_post_reposted" formatted="false">
+            <item quantity="one">برگه‌ی شما را بازگردآوری کرده‌است.</item>
+            <item quantity="other">برگه‌ی شما را بازگردآوری کرده‌اند.</item>
+        </plurals>
+        <plurals name="notif_my_collection_followed">
+            <item quantity="one">دفتر شما را دنبال کرده‌است.</item>
+            <item quantity="other">دفتر شما را دنبال کرده‌اند.</item>
+        </plurals>
+        <plurals name="notif_friend_followed_collections" >
+            <item formatted="false" quantity="one">دفتر %s را دنبال کرده است.</item>
+            <item formatted="false" quantity="other">دفتر %s را دنبال کرده اند.</item>
+        </plurals>
+        <plurals name="notif_friend_created_collections" >
+            <item formatted="false" quantity="one">%s یک دفتر جدید ساخته است.</item>
+            <item formatted="false" quantity="other">1$%s 2$%d دفتر جدید ساخته است.</item>
+        </plurals>-->
+    <!--<string name="format_day_meal_cal_unit" formatted="false">%.0f کیلوکالری از (%d %s)</string>-->
+</resources>

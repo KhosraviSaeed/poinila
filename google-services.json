@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "167856249045",
+    "project_id": "ponila-official"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:167856249045:android:55a0071f579cd514",
+        "android_client_info": {
+          "package_name": "com.shaya.poinila"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "167856249045-k57ge2m42jpeds4bmsrf97ncr44aoj0u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shaya.poinila",
+            "certificate_hash": "EE4EA336D24FE4723DB34BF0CA9BF152A559AF5A"
+          }
+        },
+        {
+          "client_id": "167856249045-bt5tjuk0io8tgq64m5d1uprdh6vb563t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKNoFedZSzmvVSXbMba07n4e_Z4wszEpc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

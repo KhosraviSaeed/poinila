@@ -1,0 +1,32 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".view.fragments.CollectionListFragment">
+
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_view"
+        android:background="@color/white"
+        android:padding="@dimen/padding_columned_lvlhalf"
+        android:scrollbarStyle="outsideOverlay"
+        android:focusableInTouchMode="true"/>
+
+    <!--Collection-->
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add_collection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_colorNormal="@color/flamingo"
+        fab:fab_colorPressed="@color/sea_buckthorn"
+        fab:fab_icon="@drawable/add_collection_white"
+        fab:fab_title="@string/add_collection"
+        fab:fabSize="normal"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_gravity="right|bottom"/>
+
+</FrameLayout>

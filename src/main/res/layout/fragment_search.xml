@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_texture"
+    android:orientation="vertical"
+    tools:context=".view.fragments.SearchFragment">
+
+    <RelativeLayout
+        style="@style/search_bar_container"
+        android:background="@drawable/search_field_background"
+        android:padding="@dimen/padding_lvlquarter">
+
+        <ImageButton
+            android:id="@+id/search_btn"
+            android:layout_width="@dimen/margin_lvl5"
+            android:layout_height="@dimen/margin_lvl5"
+            android:src="@drawable/search_selector"
+            android:background="@drawable/search_btn_background"
+            android:layout_centerVertical="true" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_toRightOf="@id/search_btn">
+
+            <EditText
+                android:id="@+id/search_field"
+                style="@style/edit_text_borderless"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_lvl5"
+                android:layout_marginRight="@dimen/search_tag_width"
+                android:gravity="right|center_vertical"
+                android:imeOptions="actionSearch"
+                android:inputType="textPersonName"
+                android:background="@null"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:id="@+id/search_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/member_tag"
+                    style="@style/search_tag_rightcentered"
+                    android:layout_marginRight="@dimen/search_tag_marginright"
+                    android:text="@string/member" />
+
+                <TextView
+                    android:id="@+id/collection_tag"
+                    style="@style/search_tag_rightcentered"
+                    android:layout_marginRight="@dimen/search_tag_marginright"
+                    android:text="@string/collection" />
+
+                <TextView
+                    android:id="@+id/post_tag"
+                    style="@style/search_tag_rightcentered"
+                    android:text="@string/post" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="@dimen/padding_lvlhalf"
+        android:visibility="gone" />
+
+</LinearLayout>

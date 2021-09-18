@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Will be used in a RelativeLayout container in notifications-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Title (Requester Name)-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_toLeftOf="@id/image"
+        android:layout_marginRight="@dimen/margin_lvl1"
+        android:layout_alignParentTop="true"
+        style="@style/wrap_wrap.medium_text.black_text"
+        android:gravity="right"
+        android:textDirection="anyRtl"
+        android:layoutDirection="rtl"/>
+
+    <!--Subtitle (Request Message)-->
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_below="@id/title"
+        android:layout_alignRight="@id/title"
+        style="@style/wrap_wrap.small_text.boulder_text"
+        android:gravity="right"
+        android:text="@string/has_send_friend_request"
+        android:layout_marginBottom="@dimen/margin_lvlhalf"
+        />
+</merge>

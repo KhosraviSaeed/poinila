@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_columned_lvl1">
+
+    <!--Image (avatar, post_item ... ) -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        style="@style/columnedImage.medium"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/user_no_image"
+        android:id="@+id/image"
+        />
+
+    <!--Title (owner name, commenter, post_item name) -->
+    <!--listItems_smallFont-->
+    <TextView
+        style="@style/columnedItem_title_smallFont"
+        android:id="@+id/title"
+        android:layout_toLeftOf="@+id/image"
+        android:layout_marginRight="@dimen/margin_columned_lvl1"
+        android:layout_marginTop="@dimen/margin_columned_lvlhalf"
+        android:textColor="@color/boulder"
+        />
+
+    <!--Subtitle (collector name) -->
+    <TextView
+        android:id="@+id/subtitle"
+        style="@style/columnedItem_title_mediumFont"
+        android:layout_alignRight="@id/title"
+        android:layout_below="@id/title"
+        android:textColor="@color/black"
+        />
+</RelativeLayout>

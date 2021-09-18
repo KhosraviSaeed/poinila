@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/activity_root"
+    tools:context="com.shaya.poinila.android.presentation.view.activity.FragmentHostActivity">
+
+    <!--<include layout="@layout/toolbar" />-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/content"
+        android:background="@null">
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/dialog_new_collection">
+    <!--Title-->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/caption_input_layout"
+        style="@style/textInputLayout"
+        android:hint="@string/hint_collection_caption"
+        app:counterMaxLength="@integer/max_length_collection_name">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/caption_field"
+            style="@style/input_til" />
+        <!--style="@style/input_oneLine"-->
+    </android.support.design.widget.TextInputLayout>
+
+
+    <!--Private/Public-->
+    <LinearLayout
+        android:id="@+id/privacy_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/corner_lvl1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/private_word"
+            android:textColor="@color/black" />
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            style="@style/checkbox_my_sin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <!--Circle-->
+    <Button
+        android:id="@+id/select_circle"
+        style="@style/match_wrap.medium_text.mercury.boulder_text.btn"
+        android:layout_marginBottom="@dimen/margin_lvl1"
+        android:enabled="false"
+        android:gravity="right|center_vertical"
+        android:text="@string/select_circle"
+    android:textColor="@color/black_disabled_grey" />
+
+    <!--Topic-->
+    <Spinner
+        android:id="@+id/select_topic"
+        style="@style/spinner"
+        android:layout_marginBottom="@dimen/margin_lvl1"
+        android:prompt="@string/select_topic" />
+    <!--<Spinner
+        android:id="@+id/select_topic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_lvl1"
+        android:layoutDirection="rtl"/>-->
+    <!--<fr.ganfra.materialspinner.MaterialSpinner
+        android:id="@+id/select_topic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_lvl1"
+        android:layoutDirection="rtl"
+        app:ms_multiline="true"
+        app:ms_hint="@string/select_topic"
+        app:ms_enableFloatingLabel="true"
+        app:ms_enableErrorLabel="true"
+        app:ms_baseColor="@color/mercury"
+        app:ms_errorColor="@color/error_red"
+        app:ms_hintColor="@color/ponila_green"
+        app:ms_arrowColor="@color/my_sin"
+        app:ms_arrowSize="16dp"
+        app:ms_isRtl="true"/>-->
+    <!--style="@style/spinner"-->
+
+    <!--Below this item are arbitrary fields-->
+    <ImageButton
+        android:id="@+id/expand"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:src="@drawable/arrow_down_white_24dp" />
+
+    <!--Description-->
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/description_input_layout"
+        style="@style/textInputLayout"
+        android:layout_marginBottom="@dimen/margin_lvl1"
+        android:hint="@string/hint_collection_description"
+        app:counterMaxLength="@integer/max_length_collection_description">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/description_field"
+            style="@style/input_til"
+            android:minLines="2"
+            android:maxLines="4"/>
+
+    </android.support.design.widget.TextInputLayout>
+    <!--android:minLines="@integer/content_input_min_lines"
+            android:maxLines="@integer/content_input_max_lines"-->
+</merge>

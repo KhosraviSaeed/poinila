@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--Use "favorites_formatted" string resource-->
+    <TextView
+        android:background="@android:color/white"
+        android:layout_marginTop="@dimen/padding_lvl1"
+        android:layout_marginLeft="@dimen/padding_lvl2"
+        android:layout_marginRight="@dimen/padding_lvl2"
+        android:id="@+id/item_count"
+        style="@style/match_wrap.large_text.centered"
+        />
+
+    <include layout="@layout/recycler_view_full"/>
+
+</LinearLayout>

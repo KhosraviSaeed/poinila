@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><!--Buttons--><!--<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/posNegBtnsContainer"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="@dimen/margin_lvl1"
+    tools:showIn="@layout/fragment_login">-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/fragment_login">
+
+    <Button
+        android:id="@+id/last_button"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="@dimen/input_height"
+        android:text="@string/login"
+        style="@style/large_text.west_side.rounded.white_text" />
+
+    <android.support.v4.widget.Space
+        android:layout_width="@dimen/margin_lvl1"
+        android:layout_height="1px" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="@dimen/input_height"
+        android:text="@string/signup"
+        style="@style/large_text.flamingo.rounded.white_text" />
+    <!--</LinearLayout>-->
+</merge>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--
+    <style name="poinila_textview" parent="android:Widget.TextView">
+     &lt;!&ndash;   <item name="android:paddingLeft">@dimen/padding_lvl1</item>
+        <item name="android:paddingRight">@dimen/padding_lvl1</item>&ndash;&gt;
+        <item name="android:gravity">center_vertical</item>
+    </style>
+-->
+
+    <!--<style name="textview_title_orange" parent="textview_large">
+        <item name="android:textColor">@color/poinila_title_orange</item>
+    </style>
+
+    <style name="textview_headline_orange" parent="textview_giant">
+        <item name="android:textColor">@color/poinila_title_orange</item>
+    </style>-->
+<!--
+    <style name="textview_giant" parent="poinila_textview">
+        <item name="android:textSize">@dimen/fontsize_giant</item>
+    </style>
+
+    <style name="textview_large" parent="poinila_textview">
+        <item name="android:textSize">@dimen/fontsize_large</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="textview_medium" parent="poinila_textview">
+        <item name="android:textSize">@dimen/fontsize_medium</item>
+    </style>
+    <style name="textview_small" parent="poinila_textview">
+        <item name="android:textSize">@dimen/fontsize_small</item>
+    </style>-->
+<!--    <style name="textview_h1" parent="poinila_textview">
+        <item name="android:textSize">@dimen/fontsize_h1</item>
+    </style>
+    <style name="textview_h2" parent="poinila_textview">
+        <item name="android:textSize">@dimen/fontsize_h2</item>
+    </style>
+    <style name="textview_h3" parent="poinila_textview">
+        <item name="android:textSize">@dimen/fontsize_h3</item>
+    </style>-->
+
+ <!--   <style name="post_3line_tv" parent="textview_medium">
+        <item name="android:maxLines">3</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="textview_body_transparent_bg" parent="textview_medium">
+        <item name="android:background">@drawable/rounded_rect_gray_transparent</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>-->
+
+</resources>

@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.shaya.poinila.android.presentation.view.activity.CommentsListActivity">
+    <!--Tool Bar / Action Bar-->
+    <!--<include layout="@layout/toolbar"/>-->
+
+    <!--Use "comments_formatted" string resource-->
+    <TextView
+        android:background="@android:color/white"
+        android:layout_marginTop="@dimen/padding_lvl1"
+        android:layout_marginLeft="@dimen/padding_lvl2"
+        android:layout_marginBottom="@dimen/padding_lvl1"
+        android:layout_marginRight="@dimen/padding_lvl2"
+        android:id="@+id/item_count"
+        android:gravity="center"
+        style="@style/match_wrap.large_text.boulder_text"
+        android:layout_below="@+id/toolbar"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_view"
+        android:layout_below="@id/item_count"
+        android:layout_above="@+id/comment_container"
+        android:paddingTop="@dimen/padding_lvl1"
+        android:paddingBottom="@dimen/padding_lvl2"
+        android:paddingLeft="@dimen/padding_lvl2"
+        android:paddingRight="@dimen/padding_lvl2"
+        android:background="@android:color/white"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/comment_container"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_lvl1"
+        android:padding="@dimen/padding_lvlquarter"
+        android:background="@drawable/comment_field_background">
+
+        <ImageButton
+            android:layout_width="@dimen/icon_big"
+            android:layout_height="@dimen/icon_big"
+            android:id="@+id/send"
+            android:src="@drawable/send_selector"
+            android:background="@drawable/send_comment_selector_background"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/insert_comment_hint"
+            android:id="@+id/comment_field"
+            style="@style/edit_text_borderless"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/padding_lvl1"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

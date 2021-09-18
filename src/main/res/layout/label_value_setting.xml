@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/padding_lvl1"
+    android:paddingBottom="10dp"
+    android:paddingRight="@dimen/padding_lvl2"
+    android:paddingLeft="@dimen/padding_lvl1"
+    android:background="@drawable/poinila_frame">
+
+
+    <TextView
+        android:layout_toRightOf="@+id/help_btn"
+        style="@style/setting_value"
+        android:gravity="left"
+        android:maxLines="2"
+        android:paddingRight="@dimen/padding_lvl2"
+        android:id="@+id/value"
+        android:ellipsize="end"
+        android:maxLength="@integer/profile_setting_value_max_length"
+        android:layout_alignBaseline="@+id/label"/>
+
+
+    <ImageView
+        android:id="@id/help_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/action_help_setting"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/padding_lvlquarter"
+        android:layout_alignParentLeft="true"/>
+
+
+    <TextView
+        style="@style/setting_label"
+        android:id="@+id/label"
+        android:layout_alignParentRight="true"/>
+
+
+</RelativeLayout>

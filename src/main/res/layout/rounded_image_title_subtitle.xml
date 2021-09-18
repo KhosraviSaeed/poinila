@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <!--Image (avatar, post_item ... ) -->
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="@dimen/image_small"
+        android:layout_height="@dimen/image_small"
+        android:layout_alignParentRight="true"
+        app:riv_corner_radius="@dimen/corner_lvl1"
+        android:src="@drawable/collection_no_image"
+        android:id="@+id/image"
+        android:layout_marginLeft="@dimen/margin_lvl1"
+        />
+
+    <!--Title (owner name, commenter, post_item name) -->
+    <TextView
+        style="@style/match_wrap.medium_text.centered_right"
+        android:text="@string/saved_in"
+        android:id="@+id/title"
+        android:layout_toLeftOf="@+id/image"
+        />
+
+    <!--Subtitle (Commentor url) -->
+    <TextView
+        android:id="@+id/subtitle"
+        style="@style/match_wrap.small_text.boulder_text.centered_right"
+        android:layout_alignRight="@id/title"
+        android:layout_below="@id/title"
+        />
+</RelativeLayout>

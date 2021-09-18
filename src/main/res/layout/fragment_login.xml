@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_lvl2">
+
+        <!--Login Title-->
+        <include layout="@layout/title_arrow_divider_login" />
+
+        <!--User Name-->
+        <LinearLayout
+            android:id="@+id/username_input_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_height"
+            android:layout_below="@id/divider"
+            android:layout_marginTop="@dimen/margin_lvl1"
+            android:background="@drawable/bordered_rounded_rect"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/username_input"
+                style="@style/large_text.boulder_text.centered_right"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/input_height"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/hint_userNameOrEmail"
+                android:inputType="text" />
+
+            <ImageView
+                android:layout_width="@dimen/icon_big"
+                android:layout_height="@dimen/icon_big"
+                android:src="@drawable/form_login_user" />
+        </LinearLayout>
+
+
+        <!--Password-->
+        <LinearLayout
+            android:id="@+id/password_input_container"
+            style="@style/thin_border"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_height"
+            android:layout_below="@id/username_input_container"
+            android:layout_marginBottom="@dimen/margin_lvl1"
+            android:layout_marginTop="@dimen/margin_lvl1"
+            android:background="@drawable/bordered_rounded_rect"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/toggle_visibility"
+                android:layout_width="@dimen/icon_small"
+                android:layout_height="@dimen/icon_small"
+                android:layout_margin="@dimen/margin_lvl1"
+                android:src="@drawable/toggle_invisible_nobel_32dp" />
+
+            <EditText
+                android:id="@+id/password_input"
+                style="@style/large_text.boulder_text.centered_right"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/input_height"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword" />
+
+            <ImageView
+                android:layout_width="@dimen/icon_big"
+                android:layout_height="@dimen/icon_big"
+                android:src="@drawable/form_login_password" />
+        </LinearLayout>
+
+
+        <!--
+        <LinearLayout
+            android:id="@+id/password_input_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_height"
+            android:layout_below="@id/username_input"
+            android:layout_marginTop="@dimen/margin_lvl1"
+            android:background="@drawable/bordered_rounded_rect"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/toggle_visibility"
+                android:layout_width="@dimen/icon_small"
+                android:layout_height="@dimen/icon_small"
+                android:layout_margin="@dimen/margin_lvl1"
+                android:src="@drawable/toggle_visible_nobel_32dp" />
+
+            <EditText
+                android:id="@+id/password_input"
+                style="@style/medium_text.boulder_text"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/input_height"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:paddingRight="@dimen/padding_lvl2" />
+        </LinearLayout>-->
+
+        <TextView
+            android:id="@+id/forgot_password_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password_input_container"
+            android:padding="@dimen/padding_lvl1"
+            android:text="@string/forgot_password"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fontsize_medium" />
+
+        <!--<com.shaya.poinila.android.presentation.view.costom_view.BackForthButtonsBox
+            android:id="@+id/signup_login_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/forgot_password_textview"
+            app:last_button_text="@string/login"
+            app:next_button_text="@string/guest">
+
+        </com.shaya.poinila.android.presentation.view.costom_view.BackForthButtonsBox>-->
+
+        <LinearLayout
+            android:id="@+id/login_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/forgot_password_textview"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_login"
+                style="@style/large_text.west_side.rounded.white_text"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/input_height"
+                android:layout_weight="1"
+                android:text="@string/login" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="@dimen/margin_lvl1"
+                android:layout_height="1px" />
+
+            <Button
+                style="@style/guest_login_outlined_login_button"
+                android:id="@+id/button_guest_login"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/input_height"
+                android:layout_weight="1"
+                android:text="@string/guest" />
+            <!--style="@style/large_text.flamingo.rounded.white_text"-->
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/button_signup"
+            style="@style/large_text.flamingo.rounded.white_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_height"
+            android:layout_below="@+id/login_buttons"
+            android:layout_marginTop="@dimen/margin_lvl1"
+            android:text="@string/signup" />
+
+        <Button
+            android:id="@+id/google_sign_in_btn"
+            android:layout_below="@id/button_signup"
+            android:background="@drawable/google_signin_btn"
+            android:text="@string/common_signin_button_text_long"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

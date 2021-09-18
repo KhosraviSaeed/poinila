@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flow="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bordered_rounded_rect"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/input_height"
+    android:paddingBottom="@dimen/padding_lvlhalf"
+    android:layout_marginBottom="@dimen/margin_lvl1"
+    android:id="@+id/tags_container">
+    <org.apmem.tools.layouts.FlowLayout
+
+        android:orientation="horizontal"
+        flow:layoutDirection="rtl"
+        android:padding="2dp"
+        android:gravity="right|center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/input_height"
+        android:id="@+id/tags_flowlayout">
+        <!--android:paddingTop="@dimen/padding_lvlhalf"
+        android:paddingBottom="@dimen/padding_lvlhalf"-->
+        <!--<EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_tag_entry_height"
+            android:actorID="@+actorID/tag_field"
+            android:hint="@string/tag"
+            style="@style/large_text.boulder_text.centered_right.maxlength_tag"
+            android:background="@color/white"
+            android:paddingRight="@dimen/padding_lvl2"
+            />-->
+    </org.apmem.tools.layouts.FlowLayout>
+    <EditText
+        android:layout_below="@id/tags_flowlayout"
+        android:id="@+id/tag_field"
+        style="@style/edittext_add_tag"
+        android:layout_margin="@dimen/margin_lvlhalf"
+        android:maxLength="@integer/max_length_tag"
+        />
+</RelativeLayout>

@@ -1,0 +1,1000 @@
+<resources>
+
+    <style name="edit_text_borderless" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@color/white</item>
+        <!--<item name="android:paddingRight">@dimen/padding_lvl1</item>
+        <item name="android:paddingLeft">@dimen/padding_lvl1</item>-->
+        <item name="android:textSize">@dimen/fontsize_large</item>
+    </style>
+
+
+    <!--New Styles-->
+    <!--IMPORTANT-->
+    <!--priority of styles:        1: layout dimensions
+                                    2: text size
+                                    3: background
+                                    4: text color
+                                    5: gravity
+    -->
+
+    <!--Background-->
+    <style name="west_side">
+        <item name="android:background">@color/west_side</item>
+    </style>
+
+    <style name="my_sin">
+        <item name="android:background">@color/my_sin</item>
+    </style>
+
+    <style name="flamingo">
+        <item name="android:background">@color/my_sin</item>
+    </style>
+
+    <!--Text Color-->
+    <style name="white_text">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="my_sin_text">
+        <item name="android:textColor">@color/my_sin</item>
+    </style>
+
+    <!--Text Size-->
+    <style name="radio_button_my_sin">
+        <item name="android:button">@drawable/radio_button_selector</item>
+    </style>
+
+    <style name="checkbox_my_sin">
+        <item name="android:button">@drawable/checkbox_selector</item>
+    </style>
+
+
+    <!---->
+    <style name="large_text.west_side.rounded">
+        <item name="android:background">@drawable/west_side_rounded_button</item>
+    </style>
+
+    <style name="large_text.west_side.rounded.white_text">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="large_text.flamingo.rounded">
+        <item name="android:background">@drawable/flamingo_rounded_button</item>
+    </style>
+
+    <style name="large_text.flamingo.rounded.white_text">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="large_text.my_sin">
+        <item name="android:textColor">@color/my_sin</item>
+    </style>
+
+    <style name="medium_text">
+        <item name="android:textSize">@dimen/fontsize_medium</item>
+    </style>
+
+    <style name="thin_border">
+        <item name="android:background">@drawable/bordered_input</item>
+    </style>
+
+    <style name="large_text.right">
+        <item name="android:gravity">right|center_vertical</item>
+    </style>
+
+    <style name="large_text">
+        <item name="android:textSize">@dimen/fontsize_large</item>
+    </style>
+
+    <style name="small_text">
+        <item name="android:textSize">@dimen/fontsize_small</item>
+    </style>
+
+    <style name="alto">
+        <item name="android:background">@color/alto</item>
+    </style>
+
+    <style name="texture">
+        <item name="android:background">@drawable/bg_texture</item>
+    </style>
+
+    <!--width and height included-->
+    <style name="wrap_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="match_wrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="match_match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="wrap_wrap.medium_text">
+        <item name="android:textSize">@dimen/fontsize_medium</item>
+    </style>
+
+    <style name="wrap_wrap.large_text">
+        <item name="android:textSize">@dimen/fontsize_large</item>
+    </style>
+
+    <style name="wrap_wrap.medium_text.bolder_text">
+        <item name="android:textColor">@color/boulder</item>
+    </style>
+
+    <style name="wrap_wrap.large_text.black_text">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="match_match.textured">
+        <item name="android:background">@drawable/bg_texture</item>
+    </style>
+
+    <style name="large_text.boulder_text">
+        <item name="android:textColor">@color/boulder</item>
+    </style>
+
+    <style name="wrap_wrap.large_text.boulder_text">
+        <item name="android:textColor">@color/boulder</item>
+    </style>
+
+    <style name="large_text.flamingo">
+        <item name="android:background">@color/flamingo</item>
+    </style>
+
+    <style name="large_text.white">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="large_text.west_side">
+        <item name="android:background">@color/west_side</item>
+    </style>
+
+    <style name="match_wrap.medium_text">
+        <item name="android:textSize">@dimen/fontsize_medium</item>
+    </style>
+
+    <style name="match_wrap.medium_text.boulder_text">
+        <item name="android:textColor">@color/boulder</item>
+    </style>
+
+    <style name="wrap_wrap.medium_text.boulder_text">
+        <item name="android:textColor">@color/boulder</item>
+    </style>
+
+    <style name="large_text.boulder_text.bordered_focusable">
+        <item name="android:background">@drawable/bordered_focusable</item>
+    </style>
+
+    <style name="wrap_wrap.medium_text.white_text">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="match_wrap.large_text.boulder_text">
+        <item name="android:textColor">@color/boulder</item>
+    </style>
+
+    <style name="match_wrap.large_text">
+        <item name="android:textSize">@dimen/fontsize_large</item>
+    </style>
+
+    <style name="match_wrap.small_text">
+        <item name="android:textSize">@dimen/fontsize_small</item>
+    </style>
+
+    <style name="match_wrap.large_text.my_sin_text">
+        <item name="android:textColor">@color/my_sin</item>
+    </style>
+
+    <style name="match_wrap.large_text.centered">
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="wrap_wrap.small_text">
+        <item name="android:textSize">@dimen/fontsize_small</item>
+    </style>
+
+    <style name="large_text.boulder_text.centered_right">
+        <item name="android:gravity">center_vertical|right</item>
+    </style>
+
+    <style name="wrap_wrap.large_text.my_sin_text">
+        <item name="android:textColor">@color/my_sin</item>
+    </style>
+
+    <style name="match_wrap.large_text.mercury">
+        <item name="android:background">@color/mercury</item>
+    </style>
+
+    <style name="wrap_wrap.small_text.alto">
+        <item name="android:textColor">@color/alto</item>
+    </style>
+
+    <style name="wrap_wrap.small_text.boulder_text">
+        <item name="android:textColor">@color/boulder</item>
+    </style>
+
+    <style name="wrap_wrap.large_text.centered_right">
+        <item name="android:gravity">center_vertical|right</item>
+    </style>
+
+    <style name="match_match.large_text">
+        <item name="android:textSize">@dimen/fontsize_large</item>
+    </style>
+
+    <style name="wrap_wrap.medium_text.black_text">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="match_wrap.medium_text.mercury.boulder_text.btn">
+        <item name="android:background">@drawable/mercury_bottom_rounded</item>
+    </style>
+
+    <style name="match_wrap.medium_text.mercury.boulder_text">
+        <item name="android:textColor">@color/boulder</item>
+    </style>
+
+    <style name="match_wrap.medium_text.mercury">
+        <item name="android:background">@color/mercury</item>
+    </style>
+
+    <style name="match_wrap.mercury">
+        <item name="android:background">@color/mercury</item>
+    </style>
+
+    <style name="match_wrap.medium_text.mercury.boulder_text.centered_right">
+        <item name="android:gravity">center_vertical|right</item>
+    </style>
+
+    <style name="medium_text.boulder">
+        <item name="android:background">@color/boulder</item>
+    </style>
+
+    <style name="medium_text.white_text">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="wrap_wrap.medium_text.my_sin_text">
+        <item name="android:textColor">@color/my_sin</item>
+    </style>
+
+    <style name="medium_text.mercury.boulder_text.centered_right">
+        <item name="android:gravity">center_vertical|right</item>
+    </style>
+
+    <style name="medium_text.mercury.boulder_text">
+        <item name="android:textColor">@color/boulder</item>
+    </style>
+
+    <style name="medium_text.mercury">
+        <item name="android:background">@color/mercury</item>
+    </style>
+
+    <style name="toolbar_font_style" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/fontsize_large</item>
+    </style>
+
+    <style name="medium_text.boulder_text.bordered_focusable">
+        <item name="android:background">@drawable/bordered_focusable</item>
+    </style>
+
+    <style name="medium_text.boulder_text">
+        <item name="android:textColor">@color/boulder</item>
+    </style>
+
+    <style name="spinner" parent="Widget.AppCompat.Spinner.DropDown">
+        <item name="android:background">@drawable/spinner</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:layoutDirection">rtl</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:popupBackground">@color/mercury</item>
+        <item name="android:spinnerMode">dialog</item>
+        <item name="android:dropDownVerticalOffset">24dp</item>
+        <item name="android:textSize">@dimen/fontsize_medium</item>
+        <!--<item name="background">@drawable/btn_dropdown</item>-->
+        <!--<item name="clickable">true</item>-->
+        <!--<item name="spinnerMode">dialog</item>-->
+
+        <!--<item name="dropDownSelector">@drawable/list_selector_background</item>-->
+        <!--<item name="popupBackground">@drawable/spinner_dropdown_background</item>-->
+        <!--<item name="dropDownVerticalOffset">-10dip</item>-->
+        <!--<item name="dropDownHorizontalOffset">0dip</item>-->
+        <!--<item name="dropDownWidth">wrap_content</item>-->
+        <!--<item name="gravity">center</item>-->
+    </style>
+
+    <style name="match_wrap.large_text.white">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="search_tag_rightcentered">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">@dimen/search_tag_width</item>
+        <item name="android:layout_height">@dimen/margin_lvl5</item>
+        <item name="android:background">@drawable/search_tag_inactive</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingRight">@dimen/padding_lvl2</item>
+    </style>
+
+    <style name="medium_text.white_text.centered">
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="wrap_wrap.small_text.alto.black_text.rounded">
+        <item name="android:background">@drawable/rounded_rect_noble_tag</item>
+    </style>
+
+    <style name="wrap_wrap.small_text.alto.black_text">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="wrap_wrap.medium_text.sea_buckthorn_text">
+        <item name="android:textColor">@color/sea_buckthorn</item>
+    </style>
+
+    <style name="match_wrap.medium_text.centered_right">
+        <item name="android:gravity">center_vertical|right</item>
+    </style>
+
+    <style name="match_wrap.small_text.boulder_text.centered_right">
+        <item name="android:gravity">center_vertical|right</item>
+    </style>
+
+    <style name="match_wrap.small_text.boulder_text">
+        <item name="android:textColor">@color/boulder</item>
+    </style>
+
+    <style name="medium_text_black_text_bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="medium_text.boulder.rounded.white_text">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="medium_text.flamingo.rounded.white_text">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="medium_text.boulder.rounded">
+        <item name="android:background">@drawable/boulder_rounded_button</item>
+    </style>
+
+    <style name="medium_text.flamingo.rounded">
+        <item name="android:background">@drawable/flamingo_rounded_button</item>
+    </style>
+
+    <style name="medium_text.flamingo">
+        <item name="android:background">@color/flamingo</item>
+    </style>
+
+    <style name="edittext_add_tag">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/fontsize_medium</item>
+        <item name="android:textColor">@color/boulder</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:hint">@string/tag</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:paddingRight">@dimen/padding_lvl2</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="stat_big_number">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/fontsize_large</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">@dimen/icon_medium</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:paddingTop">@dimen/padding_lvlquarter</item>
+        <item name="android:paddingBottom">@dimen/padding_lvlquarter</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <!--<item name="android:background">@drawable/circle_mercury</item>-->
+    </style>
+
+    <style name="transparent_collection_tag" parent="columnedItem_title_smallFont">
+        <item name="android:layout_width">@dimen/textview_collection_info_width</item>
+        <item name="android:layout_height">@dimen/textview_collection_info_height</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingRight">@dimen/padding_lvl1</item>
+        <item name="android:background">@color/gray_transparent</item>
+    </style>
+
+    <style name="input_caption" parent="input">
+        <item name="android:minLines">@integer/caption_input_min_lines</item>
+        <item name="android:maxLines">@integer/caption_input_max_lines</item>
+        <item name="android:minHeight">@dimen/input_height</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="input_content" parent="input">
+        <item name="android:minLines">@integer/content_input_min_lines</item>
+        <item name="android:maxLines">@integer/content_input_max_lines</item>
+        <item name="android:minHeight">@dimen/input_height</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="listItems_smallFont" parent="match_wrap.small_text">
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:textColor">@color/nobel</item>
+    </style>
+
+    <style name="listItems_mediumFont" parent="match_wrap.medium_text">
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:textColor">@color/boulder</item>
+    </style>
+
+    <style name="post_content_inList" parent="match_wrap">
+        <item name="android:paddingRight">@dimen/padding_columned_lvl1</item>
+        <item name="android:paddingLeft">@dimen/padding_columned_lvl1</item>
+        <item name="android:paddingTop">@dimen/padding_columned_lvl1</item>
+        <item name="android:gravity">right</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:textSize">@dimen/columnedItem_font_medium</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="input" parent="large_text.boulder_text.bordered_focusable">
+        <item name="android:paddingRight">@dimen/padding_lvl2</item>
+        <item name="android:paddingLeft">@dimen/padding_lvl2</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:textColor">@color/black_disabled_grey</item>
+        <item name="android:textColorHint">@color/boulder</item>
+    </style>
+
+    <!--has a margin for preventing hint on edittext border-->
+    <style name="input_til" parent="large_text.boulder_text.bordered_focusable_margin_top">
+        <item name="android:paddingTop">@dimen/floating_hint_margin</item>
+        <item name="android:paddingRight">@dimen/padding_lvl2</item>
+        <item name="android:paddingLeft">@dimen/padding_lvl2</item>
+        <item name="android:minHeight">@dimen/input_height</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:textColor">@color/black_disabled_grey</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--<declare-styleable name="TextInputLayout">
+        <attr name="hintTextAppearance" format="reference" />
+        <attr name="android:hint" />
+        <attr name="errorEnabled" format="boolean" />
+        <attr name="errorTextAppearance" format="reference" />
+        <attr name="counterEnabled" format="boolean" />
+        <attr name="counterMaxLength" format="integer" />
+        <attr name="counterTextAppearance" format="reference" />
+        <attr name="counterOverflowTextAppearance" format="reference" />
+        <attr name="android:textColorHint" />
+        <attr name="hintAnimationEnabled" format="boolean" />
+    </declare-styleable>-->
+    <style name="textInputLayout" parent="Widget.Design.TextInputLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="counterEnabled">true</item>-->
+        <!--<item name="android:theme">@style/TextInputLayoutTheme</item>-->
+        <!--<item name="counterTextAppearance">@style/counterTextAppearance</item>-->
+        <!--<item name="counterOverflowTextAppearance">@style/counterOverflowTextAppearance</item>-->
+        <!--<item name="hasSimpleBackground">false</item>-->
+        <!--<item name="android:layoutDirection">rtl</item>-->
+    </style>
+
+    <style name="counterTextAppearance" parent="TextAppearance.Design.Counter">
+        <item name="android:textColor">?attr/colorControlActivated</item>
+        <item name="android:textSize">@dimen/fontsize_small</item>
+        <item name="fontPath">@string/default_font_path</item>
+    </style>
+
+    <style name="counterOverflowTextAppearance" parent="TextAppearance.Design.Counter.Overflow">
+        <item name="android:textSize">@dimen/fontsize_small</item>
+        <item name="fontPath">@string/default_font_path</item>
+    </style>
+
+    <style name="large_text.boulder_text.bordered_focusable_margin_top">
+        <item name="android:background">@drawable/bordered_focusable_float_hint_margin</item>
+    </style>
+
+    <style name="input_english" parent="large_text.boulder_text.bordered_focusable">
+        <item name="android:paddingRight">@dimen/padding_lvl2</item>
+        <item name="android:paddingLeft">@dimen/padding_lvl2</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textColor">@color/black_disabled_grey</item>
+        <item name="android:textColorHint">@color/boulder</item>
+    </style>
+
+    <style name="input_oneLine" parent="input">
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+    <style name="collection_name_bar" parent="oneLineTextView">
+        <item name="android:paddingLeft">@dimen/padding_lvl1</item>
+        <item name="android:paddingRight">@dimen/padding_lvl1</item>
+        <item name="android:paddingTop">@dimen/padding_lvlhalf</item>
+        <item name="android:paddingBottom">@dimen/padding_lvlhalf</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/collection_name_bar_height</item>
+        <item name="android:textColor">@color/image_caption_text_color</item>
+        <item name="android:textSize">@dimen/fontsize_small</item>
+        <item name="android:background">@drawable/image_caption_text</item>
+    </style>
+
+    <style name="input_oneLine_password" parent="input_oneLine">
+        <item name="android:inputType">textPassword</item>
+        <item name="fontPath">@string/default_font_path</item>
+    </style>
+
+    <style name="image_centerCrop">
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="columnedImage">
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="columnedImage.medium">
+        <item name="android:layout_width">@dimen/columned_image_medium</item>
+        <item name="android:layout_height">@dimen/columned_image_medium</item>
+    </style>
+
+    <style name="image_centerCrop.medium">
+        <item name="android:layout_width">@dimen/image_medium</item>
+        <item name="android:layout_height">@dimen/image_medium</item>
+    </style>
+
+    <style name="image_centerCrop.medium.profile">
+        <item name="android:src">@drawable/user_no_image</item>
+    </style>
+
+    <style name="image_centerCrop.medium.post">
+        <item name="android:src">@drawable/post_no_image</item>
+    </style>
+
+    <style name="image_centerCrop.medium.collection">
+        <item name="android:src">@drawable/collection_no_image</item>
+    </style>
+
+    <style name="image_centerCrop.small">
+        <item name="android:layout_width">@dimen/image_small</item>
+        <item name="android:layout_height">@dimen/image_small</item>
+    </style>
+
+    <style name="image_centerCrop.small.profile">
+        <item name="android:src">@drawable/user_no_image</item>
+    </style>
+
+    <style name="comment_body">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/boulderColor_mediumSize</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="comment_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/blackColor_boldText_mediumSize</item>
+    </style>
+
+    <style name="date_small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/boulderColor_smallText</item>
+    </style>
+
+    <style name="date_medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/nobleColor_mediumText</item>
+    </style>
+
+    <style name="blackColor_boldText_mediumSize">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/fontsize_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="boulderColor_mediumSize">
+        <item name="android:textColor">@color/boulder</item>
+        <item name="android:textSize">@dimen/fontsize_medium</item>
+    </style>
+
+    <style name="nobleColor_mediumText">
+        <item name="android:textColor">@color/nobel</item>
+        <item name="android:textSize">@dimen/fontsize_small</item>
+    </style>
+
+    <style name="boulderColor_smallText">
+        <item name="android:textColor">@color/boulder</item>
+        <item name="android:textSize">@dimen/fontsize_small</item>
+    </style>
+
+    <style name="image_centerCrop.giant.profile">
+        <item name="android:src">@drawable/user_no_image</item>
+    </style>
+
+    <style name="image_centerCrop.giant">
+        <item name="android:layout_width">@dimen/image_profile_pic_big</item>
+        <item name="android:layout_height">@dimen/image_profile_pic_big</item>
+    </style>
+
+    <style name="removable_tag_inverse" parent="android:TextAppearance.Widget.TextView">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/my_sin</item>
+        <item name="android:textSize">@dimen/columnedItem_font_large</item>
+    </style>
+
+    <style name="collection_details_buttons">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="notification_main_image">
+        <item name="android:layout_width">@dimen/image_small</item>
+        <item name="android:layout_height">@dimen/image_small</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="notification_participant_image">
+        <item name="android:layout_width">@dimen/participant_size</item>
+        <item name="android:layout_height">@dimen/participant_size</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="profile_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/fontsize_giant</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">2</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+
+    <style name="profile_subtitle" parent="wrap_wrap.large_text.boulder_text">
+        <item name="android:gravity">center_vertical|right</item>
+    </style>
+
+    <style name="dialog_buttons" parent="Widget.AppCompat.Button">
+        <item name="android:layout_height">@dimen/dialog_height</item>
+        <item name="android:textSize">@dimen/fontsize_medium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="positive_dialog_button" parent="dialog_buttons">
+        <item name="android:background">@drawable/flamingo_rounded_button</item>
+    </style>
+
+    <style name="neutral_dialog_button" parent="dialog_buttons">
+        <item name="android:background">@drawable/mysin_rounded_button</item>
+    </style>
+
+    <style name="negative_dialog_button" parent="dialog_buttons">
+        <item name="android:background">@drawable/boulder_rounded_button</item>
+    </style>
+
+    <style name="tabs_style" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorHeight">0dp</item>
+        <item name="tabMode">fixed</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/tab_layout_height</item>
+        <item name="android:background">@color/black</item>
+        <item name="tabGravity">fill</item>
+    </style>
+
+    <style name="columnedItem_largeText" parent="match_wrap">
+        <item name="android:textSize">@dimen/columnedItem_font_large</item>
+        <item name="android:gravity">center_vertical|right</item>
+    </style>
+
+    <style name="columnedStatText" parent="columnedItem_mediumText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="columnedItem_mediumText">
+        <item name="android:textSize">@dimen/columnedItem_font_medium</item>
+    </style>
+
+    <style name="post_columned_title" parent="columnedItem_largeText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:paddingRight">@dimen/padding_columned_lvl1</item>
+        <item name="android:paddingLeft">@dimen/padding_columned_lvl1</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="columnedItem_smallText">
+        <item name="android:textSize">@dimen/columnedItem_font_small</item>
+    </style>
+
+    <style name="columnedItem_title_smallFont" parent="oneLineTextView">
+        <item name="android:textSize">@dimen/columnedItem_font_small</item>
+    </style>
+
+    <style name="columnedItem_title_mediumFont" parent="oneLineTextView">
+        <item name="android:textSize">@dimen/columnedItem_font_medium</item>
+    </style>
+
+    <style name="oneLineTextView">
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="collection_rounded_image">
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="riv_corner_radius">@dimen/corner_columned_lvl1</item>
+        <!--<item name="aspectRatioEnabled">true</item>
+        <item name="dominantMeasurement">width</item>-->
+    </style>
+
+
+    <style name="select_frame_textView" parent="oneLineTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/mercury</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="base_select_frame">
+        <item name="android:layout_height">@dimen/bar_height</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/margin_columned_lvl1</item>
+        <item name="android:layout_marginRight">@dimen/margin_columned_lvl1</item>
+        <item name="android:layout_marginLeft">@dimen/margin_columned_lvl1</item>
+    </style>
+
+    <style name="select_frame" parent="base_select_frame">
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="small_stats">
+        <item name="android:layout_width">@dimen/icon_columned_small</item>
+        <item name="android:layout_height">@dimen/icon_columned_small</item>
+    </style>
+
+    <style name="base_search_container">
+        <item name="android:layout_marginTop">@dimen/margin_columned_lvl1</item>
+        <item name="android:layout_marginRight">@dimen/margin_columned_lvl1</item>
+        <item name="android:layout_marginLeft">@dimen/margin_columned_lvl1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="search_bar_container" parent="base_search_container">
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="notification_page_main_button" parent="medium_text.white_text.centered">
+        <item name="android:layout_width">@dimen/notif_button_width</item>
+        <item name="android:layout_height">@dimen/notification_page_main_button_height</item>
+        <item name="android:background">@drawable/notif_tab</item>
+    </style>
+
+    <style name="profile_aboutMe">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/fontsize_large</item>
+        <item name="android:textColor">@color/about_me_text_color</item>
+        <item name="android:gravity">center_vertical|right</item>
+    </style>
+
+    <style name="profile_arrow_left">
+        <item name="android:src">@drawable/arrow_left_48dp</item>
+        <item name="android:layout_width">@dimen/icon_small</item>
+        <item name="android:layout_height">@dimen/icon_small</item>
+    </style>
+
+    <style name="oneLineTextView.mediumFont">
+        <item name="android:textSize">@dimen/fontsize_medium</item>
+    </style>
+
+    <style name="oneLineTextView.smallFont">
+        <item name="android:textSize">@dimen/fontsize_small</item>
+    </style>
+
+    <style name="oneLineTextView.largeFont">
+        <item name="android:textSize">@dimen/fontsize_large</item>
+    </style>
+
+    <style name="post_content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/fontsize_medium</item>
+    </style>
+
+    <style name="stat_big_icon">
+        <item name="android:layout_width">@dimen/icon_medium</item>
+        <item name="android:layout_height">@dimen/icon_medium</item>
+    </style>
+
+    <style name="circleFrame_management_icon">
+        <item name="android:layout_width">@dimen/icon_big</item>
+        <item name="android:layout_height">@dimen/icon_big</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:background">@color/my_sin</item>
+    </style>
+
+    <style name="member_inlist_avatar" parent="image_centerCrop">
+        <item name="android:layout_width">@dimen/image_small</item>
+        <item name="android:layout_height">@dimen/image_small</item>
+        <item name="android:src">@drawable/user_no_image</item>
+    </style>
+
+    <style name="helpIndicator" parent="baseHelpIndicator">
+
+    </style>
+
+    <style name="baseHelpIndicator">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/helpIndicator_height</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="baseHelpText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:lines">3</item>-->
+        <item name="android:gravity">bottom</item>
+        <!--<item name="android:background">@color/black_transparent</item>-->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/fontsize_medium</item>
+        <item name="android:paddingBottom">@dimen/padding_lvl1</item>
+        <item name="android:paddingLeft">@dimen/padding_lvl2</item>
+        <item name="android:paddingRight">@dimen/padding_lvl2</item>
+    </style>
+
+    <style name="helpFragment_text" parent="baseHelpText">
+        <item name="android:layout_width">wrap_content</item>
+        <!--<item name="android:layout_width">wrap_content</item>-->
+    </style>
+
+    <style name="baseHelpImage">
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:background">@color/black_transparent</item>-->
+        <item name="aspectRatio">1.575</item>
+        <item name="aspectRatioEnabled">true</item>
+        <item name="dominantMeasurement">width</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <style name="helpFragment_image" parent="baseHelpImage">
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="interest_item" parent="match_wrap">
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="interest_item.selectable" parent="interest_item">
+        <item name="android:padding">@dimen/padding_lvlhalf</item>
+    </style>
+
+    <style name="base_help_textveiw_bg">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:src">@drawable/help_text_background</item>
+    </style>
+
+    <style name="help_textview_bg" parent="base_help_textveiw_bg">
+        <item name="android:layout_width">280dp</item>
+    </style>
+
+
+    <style name="setting_value" parent="poinila_textView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/fontsize_medium</item>
+        <item name="android:textColor">@color/boulder</item>
+    </style>
+
+    <style name="poinila_textView" parent="android:TextAppearance.Widget.TextView"/>
+
+    <style name="setting_label" parent="poinila_textView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/fontsize_large</item>
+        <item name="android:textColor">@color/black_disabled_grey</item>
+    </style>
+
+    <style name="fab">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fab_colorNormal">@color/flamingo</item>
+        <item name="fab_colorPressed">@color/sea_buckthorn</item>
+        <item name="fab_size">mini</item>
+    </style>
+
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontPath">@string/default_font_path</item>
+    </style>
+
+    <style name="cropper_button">
+        <item name="android:layout_width">@dimen/icon_medium</item>
+        <item name="android:layout_height">@dimen/icon_medium</item>
+        <!--<item name="android:layout_margin">@dimen/margin_lvl1</item>-->
+        <item name="android:background">@null</item>
+        <!--<item name="android:background">@color/black_transparent</item>-->
+        <item name="android:padding">@dimen/padding_lvlhalf</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="match_wrap.large_text.black_text">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="textInputLayout.noCharCounter">
+        <item name="counterEnabled">false</item>
+    </style>
+
+    <style name="input_til.password">
+        <item name="android:inputType">textPassword</item>
+        <item name="fontPath">@string/default_font_path</item>
+        <!--<item name="android:background">@null</item>-->
+    </style>
+
+    <style name="askForLikeAppButtons" parent="Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:theme">@style/AskIfUserLikeAppButtonTheme</item>
+    </style>
+
+    <style name="askForRateButtons" parent="askForLikeAppButtons">
+        <item name="android:theme">@style/AskIfUserRateAppButtonTheme</item>
+    </style>
+
+    <style name="guest_login_outlined_login_button" parent="large_text.boulder_text">
+        <item name="android:background">@drawable/outlined_boulder_button</item>
+        <item name="android:textSize">@dimen/fontsize_large</item>
+        <item name="android:textColor">@color/boulder</item>
+
+    </style>
+
+    <style name="select_image_profile">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">@dimen/margin_lvl1</item>
+        <item name="android:padding">@dimen/padding_lvlquarter</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/flamingo_rounded_button</item>
+    </style>
+
+
+</resources>

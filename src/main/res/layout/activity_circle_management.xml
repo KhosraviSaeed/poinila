@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_texture"
+    android:orientation="vertical"
+    tools:context="com.shaya.poinila.android.presentation.view.activity.CirclesManagementActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_lvl1"
+        android:id="@+id/recycler_view"
+        android:background="@android:color/white"
+        android:padding="@dimen/padding_lvlhalf"/>
+</LinearLayout>

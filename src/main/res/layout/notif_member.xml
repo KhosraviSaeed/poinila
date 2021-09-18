@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/padding_lvl1"
+    android:paddingBottom="@dimen/padding_lvl1"
+    android:paddingLeft="@dimen/padding_lvl2"
+    android:paddingRight="@dimen/padding_lvl2"
+    android:clickable="true"
+    android:background="@drawable/poinila_frame"
+    android:layout_marginTop="@dimen/margin_lvlhalf"
+    android:layout_marginLeft="@dimen/margin_lvlhalf"
+    android:layout_marginRight="@dimen/margin_lvlhalf">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        style="@style/notification_main_image"
+        android:src="@drawable/user_no_image"
+        android:id="@+id/image"/>
+<!--
+    <TextView
+        android:actorID="@+actorID/title"
+        android:layout_toLeftOf="@actorID/image"
+        android:layout_marginRight="@dimen/margin_lvl1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/margin_lvlhalf"
+        android:text="@string/test_name"
+        style="@style/wrap_wrap.medium_text.black_text"/>-->
+    <!--Notification Title and Message-->
+    <include layout="@layout/notif_title_subtitle_black_gray"/>
+
+    <include layout="@layout/notif_images_container"
+        android:id="@+id/notif_image_container"/>
+</RelativeLayout>

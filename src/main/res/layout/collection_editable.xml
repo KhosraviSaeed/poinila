@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_columned_lvlhalf"
+    android:background="@drawable/poinila_frame"
+    android:id="@+id/card_view">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/collection_item"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            android:background="@drawable/collection_bottom_bar"
+            android:layout_margin="1dp"
+            android:weightSum="2">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/padding_columned_lvl1"
+                android:id="@+id/remove_collection"
+                android:layout_weight="1">
+
+                <TextView
+                    style="@style/wrap_wrap.medium_text.boulder_text"
+                    android:text="@string/remove"
+                    android:id="@+id/removeButton"
+                    android:layout_centerInParent="true"
+                    />
+                <ImageView
+                    android:layout_width="@dimen/icon_tiny"
+                    android:layout_height="@dimen/icon_tiny"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/remove_boulder_36dp"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@id/removeButton" />
+            </RelativeLayout>
+            <include layout="@layout/vertical_line"/>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/padding_columned_lvl1"
+                android:layout_weight="1"
+                android:id="@+id/edit_collection">
+
+                <TextView
+                    style="@style/wrap_wrap.medium_text.sea_buckthorn_text"
+                    android:text="@string/edit"
+                    android:id="@+id/edit"
+                    android:layout_centerInParent="true"
+                    />
+                <ImageView
+                    android:layout_width="@dimen/icon_tiny"
+                    android:layout_height="@dimen/icon_tiny"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/edit_small"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@id/edit" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

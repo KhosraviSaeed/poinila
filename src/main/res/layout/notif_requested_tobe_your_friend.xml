@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/padding_lvl1"
+    android:paddingBottom="@dimen/padding_lvl1"
+    android:paddingLeft="@dimen/padding_lvl2"
+    android:paddingRight="@dimen/padding_lvl2"
+    android:background="@color/white"
+    android:layout_margin="@dimen/margin_lvlhalf">
+
+
+    <!--Image-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        style="@style/notification_main_image"
+        android:src="@drawable/user_no_image"
+        android:id="@+id/image"/>
+
+    <!--Notification Title and Message-->
+    <include layout="@layout/notif_title_subtitle_black_gray"/>
+
+    <!--Buttons-->
+    <TextView
+        android:id="@+id/ignore"
+        android:text="@string/ignore"
+        style="@style/wrap_wrap.small_text.alto.black_text.rounded"
+        android:layout_marginRight="@dimen/margin_lvl1"
+        android:padding="@dimen/padding_lvl1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBottom="@id/image"
+        />
+
+    <TextView
+        android:id="@+id/agree"
+        android:text="@string/agree"
+        style="@style/wrap_wrap.small_text.alto.black_text.rounded"
+        android:padding="@dimen/padding_lvl1"
+        android:layout_toRightOf="@id/ignore"
+        android:layout_alignBottom="@id/image"
+        />
+
+</RelativeLayout>

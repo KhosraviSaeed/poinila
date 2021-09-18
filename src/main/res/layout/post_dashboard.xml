@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--TODO: use RecyclerView.ItemDecorator for better item spacing-->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_columned_lvlhalf"
+    android:background="@drawable/poinila_frame"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/post">
+
+        <RelativeLayout
+            style="@style/match_wrap">
+
+            <!--Post Image-->
+            <com.shaya.poinila.android.presentation.view.costom_view.AspectRatioImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:contentDescription="@string/post_contentdescription"
+                android:id="@+id/post_image"
+                android:visibility="gone"
+                app:aspectRatioEnabled="true"
+                app:dominantMeasurement="width"
+                android:background="@drawable/post_general_image"
+                />
+
+            <ImageView
+                android:id="@+id/video_type_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/video_type"
+                android:visibility="gone"
+                android:layout_margin="@dimen/margin_lvl1"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_gravity="right"
+            style="@style/post_columned_title"
+            android:id="@+id/post_title"
+            android:visibility="gone"/>
+
+        <!--Content-->
+        <TextView
+            android:id="@+id/post_content"
+            style="@style/post_content_inList"
+            android:maxLength="@integer/max_length_text_post_summary"/>
+
+        <!--Post Stats (favs, comments, etc) -->
+        <include android:id="@+id/post_stats"
+            layout="@layout/stats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_columned_lvlhalf"
+            android:layout_marginBottom="@dimen/margin_columned_lvlhalf"/>
+
+        <include layout="@layout/horizontal_line"/>
+
+        <!--Post Author-->
+        <include android:id="@+id/post_author"
+            layout="@layout/post_item_author" />
+
+        <include layout="@layout/horizontal_line"
+            />
+
+        <!--Post Collection Info-->
+        <include layout="@layout/post_item_collection"
+            android:id="@+id/post_collection"/>
+
+    </LinearLayout>
+</FrameLayout>

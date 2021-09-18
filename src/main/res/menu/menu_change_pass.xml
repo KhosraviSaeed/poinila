@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.shaya.poinila.android.presentation.view.activity.ProfileSettingActivity">
+    <item android:id="@+id/action_toggle_visibility" android:title="@string/visible_password"
+        app:showAsAction="ifRoom" android:icon="@drawable/visible_black_24dp"/>
+    <item android:id="@+id/action_submit_changes" android:title="@string/save"
+        app:showAsAction="always" android:icon="@drawable/done_24dp_black"/>
+</menu>

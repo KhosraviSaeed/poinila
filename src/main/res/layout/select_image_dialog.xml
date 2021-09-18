@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/show_profile_image"
+        style="@style/select_image_profile"
+        android:text="@string/view_photo" />
+
+    <Button
+        android:id="@+id/select_image_camera"
+        android:text="@string/from_camera"
+        style="@style/select_image_profile" />
+
+
+    <Button
+        android:id="@+id/select_image_gallery"
+        style="@style/select_image_profile"
+        android:text="@string/from_gallery" />
+
+
+</LinearLayout>

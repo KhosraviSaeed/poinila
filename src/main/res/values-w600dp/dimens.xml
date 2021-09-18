@@ -1,0 +1,103 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!--ImageView Sizes-->
+    <dimen name="image_tiny">40dp</dimen>
+    <dimen name="image_small">48dp</dimen>
+    <dimen name="image_small_48dp">60dp</dimen>
+    <dimen name="image_medium">72dp</dimen>
+    <dimen name="image_big">120dp</dimen>
+    <dimen name="image_lvl2_margin">126dp</dimen>
+    <dimen name="image_giant">180dp</dimen>
+    <dimen name="image_lvl3_margin">192dp</dimen>
+
+    <dimen name="icon_tiny">20dp</dimen> // tiny
+    <dimen name="icon_small">28dp</dimen> // small
+    <dimen name="icon_medium">40dp</dimen> // medium
+    <dimen name="icon_big">60dp</dimen> // big
+    <!--<dimen name="icon_very_big">48dp</dimen>-->
+    <dimen name="icon_giant">80dp</dimen> // giant
+
+
+    <dimen name="poinila_logo">144dp</dimen>
+
+
+    <!--TextView Sizes-->
+    <dimen name="notif_button_width">180dp</dimen>
+    <dimen name="new_interest_tag_width">320dp</dimen>
+    <dimen name="search_tag_width">96dp</dimen>
+    <dimen name="input_height">56dp</dimen>
+
+    <!--Other Sizez-->
+    <dimen name="separator_thickness">2px</dimen>
+    <dimen name="tab_layout_height">64dp</dimen>
+    <dimen name="toolbar_height">64dp</dimen>
+    <dimen name="stats_original_collection">240dp</dimen>
+    <dimen name="select_image_for_post">240dp</dimen>
+    <dimen name="new_post_image_maxheight">480dp</dimen>
+    <dimen name="comment_height">120dp</dimen>
+
+
+    <!--Font sizes-->
+    <dimen name="fontsize_giant">24sp</dimen>
+    <dimen name="fontsize_large">17sp</dimen>
+    <dimen name="fontsize_medium">13sp</dimen>
+    <dimen name="fontsize_small">11sp</dimen>
+    <!--    <dimen name="fontsize_h1">56sp</dimen>
+        <dimen name="fontsize_h2">45sp</dimen>
+        <dimen name="fontsize_h3">34sp</dimen>-->
+
+<!--    &lt;!&ndash;Paddings&ndash;&gt;
+    <dimen name="padding_lvlhalf">8dp</dimen>
+    <dimen name="padding_lvl1">16dp</dimen>
+    <dimen name="padding_lvl2">32dp</dimen>
+    <dimen name="padding_lvl3">48dp</dimen>
+    <dimen name="padding_lvl4">64dp</dimen>
+    <dimen name="padding_lvl5">80dp</dimen>
+    <dimen name="padding_lvl6">96dp</dimen>
+    <dimen name="padding_lvl1ohalf">24dp</dimen>-->
+
+<!--    &lt;!&ndash;Margins&ndash;&gt;
+    <dimen name="margin_lvlhalf">@dimen/padding_lvlhalf</dimen>
+    <dimen name="margin_lvl1">@dimen/padding_lvl1</dimen>
+    <dimen name="margin_lvl1ohalf">@dimen/padding_lvl1ohalf</dimen>
+    <dimen name="margin_lvl2">@dimen/padding_lvl2</dimen>
+    <dimen name="margin_lvl3">@dimen/padding_lvl3</dimen>
+    <dimen name="margin_lvl4">@dimen/padding_lvl4</dimen>
+    <dimen name="margin_lvl5">@dimen/padding_lvl5</dimen>
+    <dimen name="margin_lvl6">@dimen/padding_lvl6</dimen>-->
+    <dimen name="fab_margin">@dimen/margin_lvl2</dimen>
+    <dimen name="search_tag_marginright">-36dp</dimen>
+
+    <!--Corners-->
+    <dimen name="corner_lvlhalf">4dp</dimen>
+    <dimen name="corner_lvl1">@dimen/padding_lvl1</dimen>
+    <dimen name="corner_lvl2">@dimen/padding_lvl2</dimen>
+
+    <!--Border-->
+    <!--<dimen name="border_thin">2dp</dimen>-->
+
+    <!--Shadow-->
+    <dimen name="shadow_radius_lvl1">4dp</dimen>
+
+    <dimen name="dialog_lists_height">800dp</dimen>
+
+    <dimen name="image_profile_pic_big">@dimen/image_big</dimen>
+    <dimen name="bar_height">56dp</dimen>
+
+    <dimen name="tablet_bar_width">360dp</dimen>
+
+    <dimen name="notification_page_main_button_height">48dp</dimen>
+
+    <dimen name="collection_name_bar_height">48dp</dimen>
+
+    <dimen name="dialog_height">56dp</dimen>
+    <dimen name="helpIndicator_height">64dp</dimen>
+    <dimen name="help_next_skip">40dp</dimen>
+
+    <dimen name="title_subtitle_centered_width">80dp</dimen>
+    <dimen name="title_subtitle_centered_height">80dp</dimen>
+
+
+</resources>

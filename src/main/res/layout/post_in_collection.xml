@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_lvlhalf"
+    android:background="@drawable/poinila_frame">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/post"
+        >
+
+        <include layout="@layout/post_item_general"/>
+
+        <!--Post Stats (favs, comments, etc) -->
+        <include android:id="@+id/post_stats"
+            layout="@layout/stats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_lvlhalf"
+            android:layout_marginBottom="@dimen/margin_lvlhalf"/>
+
+        <include layout="@layout/horizontal_line"
+            />
+
+        <!--Post Author-->
+        <include android:id="@+id/post_author"
+            layout="@layout/post_item_author" />
+
+    </LinearLayout>
+</FrameLayout>

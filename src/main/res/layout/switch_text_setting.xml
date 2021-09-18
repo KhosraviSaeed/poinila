@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_lvl2"
+    android:background="@color/white">
+
+    <include layout="@layout/poinila_switch"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/switch_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_alignParentRight="true"
+        style="@style/wrap_wrap.large_text.black_text"
+        android:id="@+id/label"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/switch_btn"/>
+
+
+</RelativeLayout>

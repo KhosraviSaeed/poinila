@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/padding_lvl2"
+    android:paddingRight="@dimen/corner_lvl2"
+    android:paddingTop="@dimen/corner_lvl1"
+    android:paddingBottom="@dimen/corner_lvl1">
+
+    <!--Icon-->
+
+    <ImageButton
+        android:layout_width="@dimen/icon_big"
+        android:layout_height="@dimen/icon_big"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/icon"
+        android:layout_centerVertical="true"
+
+        />
+
+    <!--android:background="@drawable/add_remove_checkbox_selector"-->
+
+    <!--Icon Caption-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/icon_caption"
+        android:layout_below="@id/icon"
+        android:layout_alignLeft="@id/icon"
+        android:visibility="gone"
+        style="@style/wrap_wrap.small_text"/>
+
+    <include layout="@layout/rounded_image_title_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/icon"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/options"
+    android:layout_below="@id/divider"
+    android:background="@drawable/options_background"
+    android:layout_marginTop="@dimen/margin_lvl1"
+    android:layout_marginBottom="@dimen/margin_lvl1"
+    android:weightSum="3">
+
+    <TextView
+        android:id="@+id/first_option"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/padding_lvl1"
+        android:background="@drawable/option_left_drawable"
+        android:textColor="@color/option_text_color"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/second_option"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/padding_lvl1"
+        android:background="@drawable/option_drawable"
+        android:textColor="@color/option_text_color"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/third_option"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/padding_lvl1"
+        android:background="@drawable/option_right_drawable"
+        android:textColor="@color/option_text_color"
+        android:layout_weight="1"/>
+
+</LinearLayout>

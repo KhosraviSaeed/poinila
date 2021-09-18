@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--************distinct in different modes************-->
+    <integer name="column_count">4</integer>
+    <integer name="participants_show_limit">4</integer>
+    <integer name="friendship_invitations_summary_limit">3</integer>
+    <integer name="profile_page_collection_summary_count">5</integer>
+</resources>

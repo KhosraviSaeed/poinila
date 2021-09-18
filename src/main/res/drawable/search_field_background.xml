@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" >
+        <shape>
+            <solid android:color="@color/poinila_light_gray" />
+            <corners android:radius="@dimen/shadow_radius_lvl1" />
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <corners android:radius="@dimen/shadow_radius_lvl1" />
+            <stroke android:color="@color/poinila_light_gray" android:width="@dimen/border_thin" />
+        </shape>
+    </item>
+
+</selector>

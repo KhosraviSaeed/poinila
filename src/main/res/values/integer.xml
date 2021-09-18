@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--************distinct in different modes************-->
+    <integer name="column_count">2</integer>
+    <integer name="participants_show_limit">3</integer>
+    <integer name="friendship_invitations_summary_limit">2</integer>
+
+    <integer name="profile_setting_value_max_length">200</integer>
+    <integer name="profile_page_collection_summary_count">3</integer>
+    <!--************Constant in all modes************-->
+    <integer name="description_max_lines">4</integer>
+
+    <integer name="caption_input_min_lines">2</integer>
+    <integer name="caption_input_max_lines">3</integer>
+
+    <integer name="content_input_min_lines">3</integer>
+    <integer name="content_input_max_lines">6</integer>
+
+    <!--text post-->
+    <integer name="min_length_text_post_title">5</integer>
+    <integer name="max_length_text_post_title">50</integer>
+    <integer name="max_length_text_post_summary">500</integer>
+    <integer name="min_length_text_post_content">100</integer>
+    <integer name="max_length_text_post_content">1000</integer>
+    <!--image post-->
+    <integer name="max_length_image_post_title">50</integer>
+    <!--<integer name="min_length_image_post_summary">5</integer>-->
+    <integer name="max_length_image_post_summary">500</integer>
+    <!--comment-->
+    <integer name="min_length_comment">1</integer>
+    <integer name="max_length_comment">500</integer>
+    <!--tag-->
+    <integer name="min_length_tag">2</integer>
+    <integer name="max_length_tag">50</integer>
+    <!--collection-->
+    <integer name="max_length_collection_name">50</integer>
+    <integer name="max_length_collection_description">500</integer>
+    <!--frame-->
+    <integer name="max_length_frame_name">50</integer>
+    <!--circle-->
+    <integer name="max_length_circle_name">50</integer>
+    <!--Report-->
+    <integer name="max_length_report_content">5000</integer>
+    <integer name="max_length_report_title">200</integer>
+</resources>

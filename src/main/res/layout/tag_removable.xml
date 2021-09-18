@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_rect_noble_tag"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/padding_lvlhalf"
+    android:paddingRight="@dimen/padding_lvl1"
+    android:paddingTop="@dimen/padding_lvlhalf"
+    android:paddingBottom="@dimen/padding_lvlhalf"
+    android:layout_margin="2dp">
+    <!--android:layout_marginRight="@dimen/margin_lvlhalf"-->
+
+    <ImageButton
+        android:id="@+id/removeButton"
+        android:layout_width="@dimen/icon_small"
+        android:layout_height="@dimen/icon_small"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerInside"
+        android:src="@drawable/remove_boulder_36dp"
+        android:background="?attr/selectableItemBackground"
+        />
+    <TextView
+        style="@style/wrap_wrap.medium_text.white_text"
+        android:id="@+id/tag"
+        android:textStyle="bold"
+        android:paddingLeft="@dimen/padding_lvl1"
+        tools:text="sport"
+        />
+</LinearLayout>

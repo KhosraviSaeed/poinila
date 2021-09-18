@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/my_followed_collections"
+    style="@style/select_frame">
+
+    <ImageButton
+        android:id="@+id/select_frame_button"
+        android:layout_width="@dimen/bar_height"
+        android:layout_height="@dimen/bar_height"
+        android:src="@drawable/button_library_normal"
+        android:background="@color/poinila_select_collection_bg"/>
+
+    <TextView
+        style="@style/select_frame_textView"
+        android:text="@string/select_frame"
+        android:paddingRight="@dimen/padding_columned_lvl2"
+        android:id="@+id/select_frame_text"/>
+<!--    <Spinner
+        android:actorID="@+actorID/select_frame"
+        style="@style/spinner"
+        android:layout_marginRight="@dimen/margin_lvl2"
+        android:prompt="@string/select_frame"
+        />-->
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:riv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/padding_lvl1"
+    android:paddingBottom="@dimen/padding_lvl1"
+    android:paddingLeft="@dimen/padding_lvl2"
+    android:paddingRight="@dimen/padding_lvl2"
+    android:background="@drawable/poinila_frame"
+    android:layout_marginTop="@dimen/margin_lvlhalf"
+    android:layout_marginLeft="@dimen/margin_lvlhalf"
+    android:layout_marginRight="@dimen/margin_lvlhalf">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        style="@style/notification_main_image"
+        android:src="@drawable/collection_no_image"
+        riv:riv_corner_radius="@dimen/corner_lvl1"
+        android:id="@+id/image"/>
+
+    <!--Notification Title and Message-->
+    <include layout="@layout/notif_title_subtitle_black_gray"/>
+
+    <include layout="@layout/notif_images_container"
+        android:id="@+id/notif_image_container"/>
+</RelativeLayout>

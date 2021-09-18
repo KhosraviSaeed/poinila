@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_lvlhalf"
+    android:background="@drawable/poinila_frame">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/post">
+
+
+        <include layout="@layout/post_item_general" />
+
+        <!--Post Stats (favs, comments, etc) -->
+        <include android:id="@+id/post_stats"
+            layout="@layout/stats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_lvlhalf"
+            android:layout_marginBottom="@dimen/margin_lvlhalf"/>
+
+        <include layout="@layout/horizontal_line"
+            />
+
+        <!--Post Collection Info-->
+        <include layout="@layout/post_item_collection"
+            android:id="@+id/post_collection"/>
+
+        <RelativeLayout
+            style="@style/match_wrap"
+            android:background="@drawable/bottom_bar_remove_background"
+            android:id="@+id/bottom_bar_remove"
+            android:gravity="center"
+            android:layout_margin="@dimen/border_thin"
+            android:paddingTop="@dimen/padding_lvlhalf"
+            android:paddingBottom="@dimen/padding_lvlhalf">
+
+            <TextView
+                style="@style/wrap_wrap.medium_text.boulder_text"
+                android:text="@string/remove"
+                android:id="@+id/remove_text"
+                android:layout_centerInParent="true"
+                />
+
+
+
+            <ImageView
+                android:layout_width="@dimen/icon_tiny"
+                android:layout_height="@dimen/icon_tiny"
+                android:id="@+id/removeButton"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/remove_boulder_36dp"
+                android:layout_toRightOf="@id/remove_text" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>
+

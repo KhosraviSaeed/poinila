@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/email_input"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/input_height"
+        style="@style/input_oneLine"
+        />
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_lvl1" />
+
+    <EditText
+        android:id="@+id/message"
+        android:hint="@string/hint_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/input_content"
+        />
+</LinearLayout>

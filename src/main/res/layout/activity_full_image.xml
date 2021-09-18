@@ -1,0 +1,15 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shaya.poinila.android.presentation.view.activity.FullImageActivity">
+
+    <com.shaya.poinila.android.presentation.view.costom_view.TouchImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:layout_below="@+id/toolbar"
+        android:scaleType="fitCenter"
+        android:layout_centerInParent="true"
+        android:id="@+id/image_view" />
+</RelativeLayout>

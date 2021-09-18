@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:top="@dimen/floating_hint_margin">
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:drawable="@drawable/bordered_rounded_rect_disabled"
+            android:state_enabled="false" />
+        <item
+            android:drawable="@drawable/bordered_rounded_rect_checked"
+            android:state_pressed="true" />
+        <item
+            android:drawable="@drawable/bordered_rounded_rect_checked"
+            android:state_focused="true" />
+        <item android:drawable="@drawable/bordered_rounded_rect" />
+    </selector>
+</item>
+</layer-list>

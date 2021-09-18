@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/match_match"
+    android:id="@+id/dialog_content">
+
+    <TextView
+        android:id="@+id/type_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_post_type_description"
+
+        />
+
+    <com.shaya.poinila.android.presentation.view.costom_view.PonilaChoiceView
+        android:id="@+id/new_web_site_post_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_lvl3"
+        android:layout_below="@id/type_desc"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/margin_lvl1"
+        android:background="@color/white">
+
+
+        <RelativeLayout
+            style="@style/match_wrap">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/url_textinputlayout"
+                style="@style/textInputLayout.noCharCounter"
+                android:layout_toLeftOf="@+id/go_btn"
+                android:background="@drawable/bordered_rounded_rect"
+                app:hasSimpleBackground="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_height"
+                    style="@style/large_text.boulder_text.centered_right"
+                    android:gravity="left"
+                    android:background="@null"
+                    android:textSize="@dimen/fontsize_large"
+                    android:textColor="@color/black_disabled_grey"
+                    android:id="@+id/url_field"
+                    android:padding="@dimen/padding_lvl1"
+                    android:inputType="textUri"
+                    android:imeOptions="actionSearch"
+                    android:hint="@string/website_address" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--       <com.pnikosis.materialishprogress.ProgressWheel
+                       android:id="@+id/progress_bar"
+                       android:layout_width="@dimen/icon_big"
+                       android:layout_height="@dimen/icon_big"
+                       wheel:matProg_barColor="#5588FF"
+                       android:layout_alignParentRight="true"
+                       wheel:matProg_progressIndeterminate="true"
+                       android:layout_centerVertical="true"
+                       android:visibility="invisible"
+                       />-->
+
+            <ProgressBar
+                style="@style/Widget.AppCompat.ProgressBar"
+                android:layout_width="@dimen/icon_big"
+                android:layout_height="@dimen/icon_big"
+                android:id="@+id/progress_bar"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:indeterminate="true"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+        <!--<include layout="@layout/radio_group_post"/>-->
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/margin_lvl1"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/new_web_site_post_next_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/positive_dialog_button"
+            android:text="@string/next_phase"
+            android:layout_margin="@dimen/margin_lvl1"/>
+
+    </LinearLayout>
+
+    <!--<include layout="@layout/recycler_view_weighted_full"/>-->
+
+</RelativeLayout>

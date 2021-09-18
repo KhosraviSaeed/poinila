@@ -1,0 +1,54 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_texture"
+    tools:context=".view.fragments.MyProfileFragment">
+
+    <include layout="@layout/profile" />
+
+    <!--TODO: add cross icon, tune the whole layout-->
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="@dimen/fab_margin"
+        fab:fab_addButtonColorNormal="@color/west_side"
+        fab:fab_addButtonColorPressed="@color/my_sin"
+        fab:fab_addButtonSize="normal"
+        fab:fab_expandDirection="up"
+        fab:fab_labelStyle="@style/menu_labels_style"
+        fab:fab_labelsPosition="left">
+
+        <!--Invite to poinila-->
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_invite"
+            style="@style/fab"
+            fab:fab_icon="@drawable/poinila_24dp_white"
+            fab:fab_title="@string/invite_to_poinila_formatted" />
+
+        <!--Collection-->
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_add_collection"
+            style="@style/fab"
+            fab:fab_icon="@drawable/add_collection_white"
+            fab:fab_title="@string/add_collection" />
+
+        <!--Post-->
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_add_post"
+            style="@style/fab"
+            fab:fab_icon="@drawable/add_post_white"
+            fab:fab_title="@string/add_post" />
+
+        <!--Post from url-->
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_add_post_from_site"
+            style="@style/fab"
+            fab:fab_icon="@drawable/add_post_white"
+            fab:fab_title="@string/add_post_from_site" />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+</FrameLayout>

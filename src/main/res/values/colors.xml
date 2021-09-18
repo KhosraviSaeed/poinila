@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="poinila_gray">#D4D4D4</color>
+
+    <color name="poinila_orange">#ff9c0d</color>
+
+    <color name="poinila_dark_gray">#4f4f4f</color>
+    <color name="poinila_icon_pressed">@color/poinila_dark_gray</color>
+
+    <color name="poinila_light_gray">#717171</color>
+    <color name="poinila_icon_normal">@color/poinila_light_gray</color>
+
+    <color name="poinila_select_collection_bg">@color/poinila_light_gray</color>
+    <color name="poinila_gray_tag">#e2e2e2</color>
+    <color name="poinila_gray_follow_bar">@color/poinila_gray_tag</color>
+    
+    <color name="poinila_title_orange">#FDB92E</color>
+
+    <!--Swipe Refresh-->
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <color name="holo_green_light">#ff99cc00</color>
+
+    <!--Pallette-->
+    <color name="my_sin">#fdb92e</color>
+    <color name="sea_buckthorn">#f79633</color>
+    <color name="west_side">#ff9c0e</color>
+    <color name="flamingo">#f16136</color>
+    <color name="ponila_green">#1b5e20</color>
+    <color name="error_red">#FFDD2C00</color>
+
+    <!--Help slider colors-->
+    <color name="help_intro_color">#fcc92f</color>
+    <color name="help_dashboard_color">#f9b729</color>
+    <color name="help_collections_color">#f7ab33</color>
+    <color name="help_search_color">@color/sea_buckthorn</color>
+    <color name="help_notifications_color">#f78133</color>
+    <color name="help_profile_color">@color/flamingo</color>
+
+    <color name="wild_sand">#f4f4f4</color>
+    <color name="mercury">#e2e2e2</color>
+    <color name="alto">#d2cfcf</color>
+    <color name="nobel">#b4b4b4</color>
+    <color name="boulder">#787777</color>
+    <color name="tundora">#494949</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="white_mask_transparent">#befff6f2</color>
+    <color name="black_transparent">#B2000000</color>
+    <color name="gray_transparent">#4d000000</color>
+
+    <color name="custom_help_bg">#66000000</color>
+    <color name="help_bg">#99000000</color>
+
+    <color name="profile_info_gray">#E9E7E8</color>
+    <color name="profile_info_circle_border_color">#636363</color>
+    <color name="profile_info_circle_text_color">#4A4A4A</color>
+
+    <color name="profile_bottom_bar">#EDEBEC</color>
+    <color name="card_title_color">#454344</color>
+    <color name="image_caption_text_color">#616161</color>
+    <color name="image_caption_text_background">#F1F1F1</color>
+    <color name="tag_background_color">#F26135</color>
+
+    <color name="about_me_text_color">#626262</color>
+    <color name="blog_info_text_color">#3D3D3D</color>
+
+
+</resources>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_lvl2">
+
+        <!--Signup Title-->
+        <include layout="@layout/title_arrow_divider_login" />
+
+
+        <!--Verification Code-->
+        <EditText
+            android:id="@+id/verification_code"
+            style="@style/input_oneLine"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_height"
+            android:layout_below="@id/divider"
+            android:layout_marginTop="@dimen/margin_lvl1"
+            android:visibility="gone"
+            android:hint="@string/verification_code" />
+
+        <!--Full Name-->
+        <EditText
+            android:id="@+id/fullname_input"
+            style="@style/input"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_height"
+            android:layout_below="@id/verification_code"
+            android:layout_marginTop="@dimen/margin_lvl1"
+            android:hint="@string/fullname" />
+
+        <!--User Name-->
+        <EditText
+            android:id="@+id/username_input"
+            style="@style/input"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_height"
+            android:layout_below="@id/fullname_input"
+            android:layout_marginTop="@dimen/margin_lvl1"
+            android:hint="@string/username" />
+
+        <!--       &lt;!&ndash;Email &ndash;&gt;
+               <EditText
+                   android:id="@+id/email_input"
+                   style="@style/input"
+                   android:layout_width="match_parent"
+                   android:layout_height="@dimen/input_height"
+                   android:layout_below="@id/username_input"
+                   android:layout_marginTop="@dimen/margin_lvl1"
+                   android:hint="@string/email"
+                   android:inputType="textEmailAddress" />-->
+
+        <!--Password-->
+        <LinearLayout
+            android:id="@+id/password_input_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_height"
+            android:layout_below="@id/username_input"
+            android:layout_marginTop="@dimen/margin_lvl1"
+            android:background="@drawable/bordered_rounded_rect"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/toggle_visibility"
+                android:layout_width="@dimen/icon_small"
+                android:layout_height="@dimen/icon_small"
+                android:layout_margin="@dimen/margin_lvl1"
+                android:src="@drawable/toggle_invisible_nobel_32dp" />
+
+            <EditText
+                android:id="@+id/password_input"
+                style="@style/medium_text.boulder_text"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/input_height"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical|right"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:paddingRight="@dimen/padding_lvl2" />
+        </LinearLayout>
+
+        <!--&lt;!&ndash;Confirm Password&ndash;&gt;
+        <EditText
+            android:id="@+id/confirm_password_input"
+            style="@style/large_text.boulder_text.bordered_focusable"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_height"
+            android:layout_below="@id/password_input"
+            android:layout_marginTop="@dimen/margin_lvl1"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword" />-->
+
+        <!--Gender-->
+        <RadioGroup
+            android:id="@+id/gender_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password_input_container"
+            android:layout_marginTop="@dimen/margin_lvl1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="1" />
+
+            <!--Female-->
+            <TextView
+                style="@style/wrap_wrap.large_text.my_sin_text"
+                android:text="@string/female" />
+
+            <RadioButton
+                android:id="@+id/female"
+                style="@style/radio_button_my_sin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="1" />
+
+            <!--Male-->
+            <TextView
+                style="@style/wrap_wrap.large_text.my_sin_text"
+                android:text="@string/male" />
+
+            <RadioButton
+                android:id="@+id/male"
+                style="@style/radio_button_my_sin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="1" />
+        </RadioGroup>
+
+        <!--Terms and Conditions-->
+        <LinearLayout
+            android:id="@+id/terms_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gender_container"
+            android:layout_marginTop="@dimen/corner_lvl1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/terms_textview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/terms_conditions" />
+
+            <CheckBox
+                android:id="@+id/terms_checkbox"
+                style="@style/checkbox_my_sin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <!--Buttons-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/terms_container"
+            android:layout_marginTop="@dimen/margin_lvl1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/signup"
+                style="@style/large_text.flamingo.rounded.white_text"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/input_height"
+                android:layout_weight="1"
+                android:enabled="true"
+                android:text="@string/signup" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

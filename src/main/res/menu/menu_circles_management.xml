@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.shaya.poinila.android.presentation.view.activity.CirclesManagementActivity">
+    <item android:id="@+id/action_add_circle" android:title="@string/new_circle"
+        app:showAsAction="ifRoom|withText"
+        android:icon="@drawable/action_add_circle"/>
+</menu>

@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="right"
+    tools:context="com.shaya.poinila.android.presentation.view.activity.ProfileSettingActivity">
+
+    <!--Toolbar will be added here. Parent is not useless-->
+    <ScrollView
+        style="@style/match_match.textured"
+        android:padding="@dimen/padding_lvl2"
+        android:id="@+id/content_container"
+        android:scrollbarStyle="outsideOverlay"
+        tools:ignore="UselessParent">
+        <FrameLayout
+            style="@style/match_wrap"
+            android:layout_marginBottom="@dimen/margin_lvl2">
+            <LinearLayout
+                style="@style/match_wrap"
+                android:orientation="vertical"
+                android:id="@+id/profile_setting_group">
+
+                <include layout="@layout/label_value_setting"
+                    android:id="@+id/name"/>
+
+                <!--<include layout="@layout/label_value_setting"-->
+                    <!--android:actorID="@+actorID/username"/>-->
+
+                <include layout="@layout/label_value_setting"
+                    android:id="@+id/email"/>
+
+                <include layout="@layout/label_value_setting"
+                    android:id="@+id/phone"/>
+
+                <include layout="@layout/label_value_setting"
+                    android:id="@+id/about_me"/>
+
+                <!--<include layout="@layout/label_value_setting"
+                    android:actorID="@+actorID/gender"/>-->
+
+                <include layout="@layout/label_value_setting"
+                    android:id="@+id/website"/>
+
+
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+
+</LinearLayout>
